@@ -1,7 +1,7 @@
 const env = process.env.NODE_ENV
 const path = require('path')
-const TerserJSPlugin = require('terser-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackRootPlugin = require('html-webpack-root-plugin');
 
 module.exports = {
     entry: {
@@ -41,12 +41,12 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin(),
+        new HtmlWebpackRootPlugin()
     ],
     output: {
         path: path.resolve(__dirname, './dist'),
         pathinfo: false,
-        publicPath: '/',
         // Set filename of bundle if production or development mode is used
         filename: env === 'production' ? 'js/min/[name].bundle.min.js?[contenthash:8]' : 'js/[name].bundle.js'
     }

@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/HD-Digital-Marketing/react-component-library.git"
   },
-  "keywords": [],
+  "keywords": [
+    'React'
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

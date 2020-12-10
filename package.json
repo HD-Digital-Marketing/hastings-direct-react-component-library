@@ -1,0 +1,20 @@
+{
+  "name": "@hdscottquested/react-component-library",
+  "version": "1.0.0",
+  "description": "Hastings Direct React component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HD-Digital-Marketing/react-component-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HD-Digital-Marketing/react-component-library/issues"
+  },
+  "homepage": "https://github.com/HD-Digital-Marketing/react-component-library#readme"
+}

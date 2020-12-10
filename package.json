@@ -1,6 +1,6 @@
 {
   "name": "@hdscottquested/react-component-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hastings Direct React component library",
   "main": "index.js",
   "scripts": {

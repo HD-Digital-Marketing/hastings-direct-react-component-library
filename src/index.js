@@ -1,11 +1,13 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Button from "./components/atoms/Button";
 
 const App = () => {
     return (
         <>
-            <h1>Hastings Direct React component library!</h1>
-            <p>Let's go...</p>
+            <Button type="submit">Button One</Button>
+            <Button>Button Two</Button>
+            <Button type="link">Button Three</Button>
         </>
     )
 }

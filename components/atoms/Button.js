@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../scss/atoms/button.scss'
 
 const Button = (props) => {
 
@@ -8,7 +9,7 @@ const Button = (props) => {
     } = props;
 
     return(
-        <button type={type}>{children}</button>
+        <button className="a-btn" type={type}>{children}</button>
     )
 
 }

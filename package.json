@@ -1,7 +1,7 @@
 {
   "name": "hastings-direct-react-component-library",
   "version": "1.2.0",
-  "description": "",
+  "description": "Hastings Direct React Component Library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/HD-Digital-Marketing/hastings-direct-react-component-library.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "React",
+    "Components",
+    "Library"
+  ],
+  "author": "Hastings Direct FEDs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HD-Digital-Marketing/hastings-direct-react-component-library/issues"

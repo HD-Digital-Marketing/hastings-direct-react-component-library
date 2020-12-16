@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../scss/atoms/title.scss'
 
 const Title = (props) => {
 
@@ -10,25 +11,25 @@ const Title = (props) => {
 
     switch (titleType) {
         case 'h1':
-            title = <h1>{children}</h1>
+            title = <h1 className="a-title">{children}</h1>
             break;
         case 'h2':
-            title = <h2>{children}</h2>
+            title = <h2 className="a-title">{children}</h2>
             break;
         case 'h3':
-            title = <h3>{children}</h3>
+            title = <h3 className="a-title">{children}</h3>
             break;
         case 'h4':
-            title = <h4>{children}</h4>
+            title = <h4 className="a-title">{children}</h4>
             break;
         case 'h5':
-            title = <h5>{children}</h5>
+            title = <h5 className="a-title">{children}</h5>
             break;
         case 'h6':
-            title = <h6>{children}</h6>
+            title = <h6 className="a-title">{children}</h6>
             break;
         default:
-            title = <h1>{children}</h1>
+            title = <h1 className="a-title">{children}</h1>
     }
 
     return (

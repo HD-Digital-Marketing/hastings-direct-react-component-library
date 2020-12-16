@@ -1,0 +1,55 @@
+@import '../../../scss/variables/variables';
+
+.a-btn {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: $color-dark;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	transition: background-color 0.2s;
+	vertical-align: middle;
+
+	&:hover {
+		color: $color-dark;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	&:active,
+	&:focus {
+		color: $color-dark;
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: $color-dark;
+	}
+
+	&--primary {
+		background-color: $color-brand-primary;
+		color: $color-light;
+
+		&:hover {
+			background-color: darken($color-brand-primary, 5%);
+			color: $color-light;
+		}
+	}
+
+	&--secondary {
+		background-color: $color-brand-secondary;
+		color: $color-light;
+
+		&:hover {
+			background-color: darken($color-brand-secondary, 5%);
+			color: $color-light;
+		}
+	}
+}

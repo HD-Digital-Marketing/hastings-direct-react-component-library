@@ -6,7 +6,7 @@ const List = (props) => {
 
     const {
         children,
-        type = 'list',
+        type = '',
         theme = ''
     } = props;
 

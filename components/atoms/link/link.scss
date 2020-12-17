@@ -1,0 +1,46 @@
+@import '../../../src/scss/variables/variables';
+
+.a-link {
+	color: $color-dark;
+	text-decoration: underline;
+	text-shadow: none;
+	transition: color 0.2s, text-decoration 0.2s;
+
+	&:hover {
+		color: lighten($color-dark, 5%);
+		text-decoration: none;
+	}
+
+	&:active,
+	&:focus {
+		color: lighten($color-dark, 10%);
+	}
+
+	&--primary {
+		color: $color-brand-primary;
+
+		&:hover {
+			color: lighten($color-brand-primary, 5%);
+			text-decoration: none;
+		}
+
+		&:active,
+		&:focus {
+			color: lighten($color-brand-primary, 10%);
+		}
+	}
+
+	&--secondary {
+		color: $color-brand-secondary;
+		
+		&:hover {
+			color: lighten($color-brand-secondary, 5%);
+			text-decoration: none;
+		}
+
+		&:active,
+		&:focus {
+			color: lighten($color-brand-secondary, 10%);
+		}
+	}
+}

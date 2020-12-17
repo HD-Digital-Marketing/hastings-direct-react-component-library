@@ -6,9 +6,10 @@ const List = (props) => {
 
     const {
         children,
-        type = '',
+        listType = '',
         theme = ''
     } = props;
+	let list = '';
 
     let listClass = classNames({
         'a-list': true,
@@ -17,8 +18,26 @@ const List = (props) => {
 
     });
 
+	const items = ['List item 1', 'List item 2', 'List item 3', 'List item 4', 'List item 5']
+
+	const listItems = items.map((item, index) =>
+		<li key={index} >{ item }</li>
+	);
+
+
+	switch (ListType) {
+        case 'ul':
+            list = <ul className={listClass}>{listItems}</ul>
+            break;
+        case 'ol':
+            list = <ol className={listClass}>{listItems}</ol>
+            break;
+        default:
+            list = <ul className={listClass}>{listItems}</ul>
+    }
+
     return(
-        <ul className={listClass} type={type}>{children}</ul>
+        list
     )
 
 }

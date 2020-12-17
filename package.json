@@ -1,6 +1,6 @@
 {
   "name": "hastings-direct-react-component-library",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Hastings Direct React Component Library",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/HD-Digital-Marketing/hastings-direct-react-component-library#readme",
   "dependencies": {
-    "@jest/globals": "^26.6.2",
     "classnames": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

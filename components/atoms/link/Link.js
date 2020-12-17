@@ -6,6 +6,9 @@ const Link = (props) => {
 
 	const {
 		children,
+		rel = '',
+		target = '',
+		to = '',
 		type = ''
 	} = props;
 
@@ -17,7 +20,7 @@ const Link = (props) => {
 	});
 
 	return(
-		<a className={linkClass}>{children}</a>
+		<a to={to} className={linkClass} rel={rel}>{children}</a>
 	)
 
 }

@@ -1,32 +1,46 @@
 @import '../../../src/scss/variables/variables';
-@import '../../../src/scss/variables/space-variables';
 
-a {
-	color: color(blue);
+.a-link {
+	color: $color-dark;
 	text-decoration: underline;
 	text-shadow: none;
 	transition: color 0.2s, text-decoration 0.2s;
 
 	&:hover {
-		color: color(blue, light);
+		color: lighten($color-dark, 5%);
 		text-decoration: none;
 	}
 
 	&:active,
 	&:focus {
-		color: color(blue, light);
-	}
-}
-
-.a-link-image {
-	display: block;
-	text-decoration: none;
-
-	&__image {
-		margin-right: $global-space-small-x;
+		color: lighten($color-dark, 10%);
 	}
 
-	&__title {
-		font-weight: bold;
+	&--primary {
+		color: $color-brand-primary;
+
+		&:hover {
+			color: lighten($color-brand-primary, 5%);
+			text-decoration: none;
+		}
+
+		&:active,
+		&:focus {
+			color: lighten($color-brand-primary, 10%);
+		}
+	}
+
+	&--secondary {
+		color: $color-brand-secondary;
+		
+		&:hover {
+			color: lighten($color-brand-secondary, 5%);
+			text-decoration: none;
+		}
+
+		&:active,
+		&:focus {
+			color: lighten($color-brand-secondary, 10%);
+		}
 	}
 }

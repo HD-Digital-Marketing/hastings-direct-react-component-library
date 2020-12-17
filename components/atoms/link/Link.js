@@ -6,21 +6,21 @@ const Link = (props) => {
 
 	const {
 		children,
+		href = '',
 		rel = '',
+		role = '',
 		target = '',
-		to = '',
-		type = ''
+		theme = ''
 	} = props;
 
 	let linkClass = classNames({
-		'a-link-image': true,
-		'a-link-image__image': true,
-		'a-link-image__title': true,
-		'external': true
+		'a-link': true,
+		'a-link--primary': theme === 'primary',
+		'a-link--secondary': theme === 'secondary',
 	});
 
 	return(
-		<a to={to} className={linkClass} rel={rel}>{children}</a>
+		<a href={href} className={linkClass} rel={rel} role={role} target={target}>{children}</a>
 	)
 
 }

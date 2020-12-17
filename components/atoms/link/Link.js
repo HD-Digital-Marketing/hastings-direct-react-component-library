@@ -6,7 +6,7 @@ const Link = (props) => {
 
 	const {
 		children,
-		type = 'lnk'
+		type = ''
 	} = props;
 
 	let linkClass = classNames({

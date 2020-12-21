@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import './link.scss'
 
-const Link = (props) => {
+const Link = props => {
 
 	const {
 		children,
@@ -20,7 +20,7 @@ const Link = (props) => {
 	})
 
 	return(
-		<a href={href} className={linkClass} rel={rel} role={role} target={target}>{children}</a>
+		<a {...{ href, rel, role, target }} className={linkClass}>{children}</a>
 	)
 }
 

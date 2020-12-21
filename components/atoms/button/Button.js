@@ -16,8 +16,7 @@ const Button = props => {
 
     const buttonClass = classNames('a-btn', className, {
         'a-btn--primary': theme === 'primary',
-        'a-btn--secondary': theme === 'secondary',
-
+        'a-btn--secondary': theme === 'secondary'
     })
 
     const isAnchor = url && (url.includes('http') || url.startsWith('#') || url.startsWith('mailto') || url.startsWith('/'))

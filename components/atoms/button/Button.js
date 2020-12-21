@@ -10,15 +10,14 @@ const Button = props => {
         theme = ''
     } = props;
 
-    let btnClass = classNames({
-        'a-btn': true,
+    const buttonClass = classNames('a-btn', className, {
         'a-btn--primary': theme === 'primary',
         'a-btn--secondary': theme === 'secondary',
 
     });
 
     return(
-        <button className={btnClass} type={type}>{children}</button>
+        <button className={buttonClass} type={type}>{children}</button>
     )
 
 }

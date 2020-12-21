@@ -13,8 +13,7 @@ const Link = props => {
 		theme = ''
 	} = props
 
-	let linkClass = classNames({
-		'a-link': true,
+	const linkClass = classNames('a-link', className, {
 		'a-link--primary': theme === 'primary',
 		'a-link--secondary': theme === 'secondary',
 	})

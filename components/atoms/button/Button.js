@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
 import './button.scss'
 
 const Button = props => {
@@ -32,6 +33,15 @@ const Button = props => {
     return (
         isAnchor ? renderAnchor() : renderButton()
     )
+}
+
+Button.propTypes = {
+  type: PropTypes.string,
+  url: PropTypes.string,
+  className: PropTypes.string,
+  theme: PropTypes.string,
+  children: PropTypes.string,
+  onClick: PropTypes.string
 }
 
 export default Button

@@ -8,7 +8,8 @@ const Button = props => {
         type = 'button',
         className = '',
         theme = '',
-        children
+        children,
+        onClick
     } = props
 
     const buttonClass = classNames('a-btn', className, {
@@ -18,7 +19,7 @@ const Button = props => {
     })
 
     return(
-        <button className={buttonClass} type={type}>{children}</button>
+        <button {...{ type, onClick }} className={buttonClass}>{children}</button>
     )
 }
 

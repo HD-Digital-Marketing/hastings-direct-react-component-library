@@ -16,7 +16,7 @@ const Link = props => {
 
 	const linkClass = classNames('a-link', className, {
 		'a-link--primary': theme === 'primary',
-		'a-link--secondary': theme === 'secondary',
+		'a-link--secondary': theme === 'secondary'
 	})
 
 	return(

@@ -1,11 +1,11 @@
-import React from 'react';
-import {render} from 'react-dom';
-import Modal from '../components/molecules/modal/Modal';
-import useModal from '../components/molecules/modal/useModal';
+import React from 'react'
+import {render} from 'react-dom'
+import Modal from '../components/molecules/modal/Modal'
+import useModal from '../components/molecules/modal/useModal'
 
 const Playground = () => {
 
-	const {isShowing, toggle} = useModal();
+	const {isShowing, toggle} = useModal()
 
     return (
         <>
@@ -20,4 +20,4 @@ const Playground = () => {
 render(
     <Playground />,
     document.getElementById('root')
-);
+)

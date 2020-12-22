@@ -9,10 +9,10 @@ const Playground = () => {
 	const {isShowing, toggle} = useModal()
 
     return (
-		<div className="m-modal">
+		<>
 			<Button onClick={toggle} theme='primary'>Modal</Button>
 			<Modal isShowing={isShowing} hide={toggle}>Hello this is a modal</Modal>
-		</div>
+		</>
     )
 }
 

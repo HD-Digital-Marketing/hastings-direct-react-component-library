@@ -12,8 +12,8 @@ const developers = ['Darren', 'Dave', 'Scott', 'Dan']
 const Playground = () => {
     return (
     	<>
-    		<List type='ol' list={myList} />
-    		<List list={developers} />
+    		<List type='ol' theme='primary' list={myList} />
+    		<List theme='secondary' list={developers} />
     	</>
     )
 }

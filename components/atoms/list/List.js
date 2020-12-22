@@ -35,4 +35,8 @@ const List = props => {
 	)
 }
 
+List.propTypes = {
+	type: PropTypes.string
+}
+
 export default List

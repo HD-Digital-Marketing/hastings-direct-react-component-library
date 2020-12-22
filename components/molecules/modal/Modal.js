@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Button from '../../atoms/button/Button';
 import './modal.scss'
 
 const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPortal(
@@ -8,13 +9,11 @@ const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPort
     	<div className="m-modal-wrapper">
       		<div className="m-modal">
         		<div className="m-modal__header">
-          			<button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
-            			<span aria-hidden="true">&times;</span>
-         			</button>
+         			<Button data-dismiss="modal" aria-label="Close" onClick={hide}>&times;</Button>
         		</div>
-        		<p>
+        		<div className="m-modal__content">
           			{children}
-        		</p>
+        		</div>
       		</div>
     	</div>
 	</>, document.body

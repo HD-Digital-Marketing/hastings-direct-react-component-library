@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from '../../atoms/button/Button';
+import PropTypes from 'prop-types'
+import Button from '../../atoms/button/Button'
 import './modal.scss'
 
 const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPortal(
@@ -21,4 +22,10 @@ const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPort
 	</>, document.body
 ) : null
 
-export default Modal;
+Modal.propTypes = {
+	isShowing: PropTypes.bool,
+	hide: PropTypes.func,
+	children: PropTypes.string
+}
+
+export default Modal

@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './modal.scss'
 
-const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
+const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPortal(
 	<>
-    	<div className="modal-overlay"/>
-    	<div className="modal-wrapper" aria-modal aria-hidden tabIndex={-1} role="dialog">
+    	<div className="modal-overlay" />
+    	<div className="modal-wrapper">
       		<div className="modal">
         		<div className="modal-header">
           			<button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
@@ -13,7 +13,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
          			</button>
         		</div>
         		<p>
-          			Hello, I'm a modal.
+          			{children}
         		</p>
       		</div>
     	</div>

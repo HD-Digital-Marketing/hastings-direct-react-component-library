@@ -11,7 +11,7 @@ const Playground = () => {
     return (
 		<div className="App">
 			<Button onClick={toggle} theme='primary'>Modal</Button>
-			<Modal isShowing={isShowing} hide={toggle} />
+			<Modal isShowing={isShowing} hide={toggle}>Hello this is a modal</Modal>
 		</div>
     )
 }

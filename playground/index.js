@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Button from '../components/atoms/button/Button'
 import Modal from '../components/molecules/modal/Modal'
 import useModal from '../components/molecules/modal/useModal'
 
@@ -9,7 +10,7 @@ const Playground = () => {
 
     return (
 		<div className="App">
-			<button className="button-default" onClick={toggle}>Show Modal</button>
+			<Button onClick={toggle} theme='primary'>Modal</Button>
 			<Modal isShowing={isShowing} hide={toggle} />
 		</div>
     )

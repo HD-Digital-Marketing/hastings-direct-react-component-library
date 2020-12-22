@@ -5,11 +5,13 @@ import './list.scss'
 
 const List = props => {
 
-    const {
-        children,
-        listType = '',
-        theme = ''
-    } = props;
+	const {
+		listType = '',
+		className = '',
+		theme = '',
+		children
+	} = props
+
 	let list = '';
 
     let listClass = classNames({

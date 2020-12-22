@@ -16,7 +16,6 @@ const List = props => {
 	const listClass = classNames('a-list', className, {
 		'a-list--primary': theme === 'primary',
 		'a-list--secondary': theme === 'secondary'
-
 	})
 
 	const listItems = list.map((item, index) =>

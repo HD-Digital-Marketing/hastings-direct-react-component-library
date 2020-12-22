@@ -4,10 +4,10 @@ import './modal.scss'
 
 const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPortal(
 	<>
-    	<div className="modal-overlay" />
-    	<div className="modal-wrapper">
-      		<div className="modal">
-        		<div className="modal-header">
+    	<div className="m-modal-overlay" />
+    	<div className="m-modal-wrapper">
+      		<div className="m-modal">
+        		<div className="m-modal__header">
           			<button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
             			<span aria-hidden="true">&times;</span>
          			</button>

@@ -6,7 +6,7 @@ import './list.scss'
 const List = props => {
 
 	const {
-		listType = false,
+		type = '',
 		className = '',
 		theme = '',
 		children
@@ -24,7 +24,7 @@ const List = props => {
 		<li key={index} >{ item }</li>
 	);
 
-	const isOrdered = listType
+	const listType = type && (type.includes('ol'))
 
 	const renderUnorderedList = () =>
 		<ul className={listClass}>{listItems}</ul>
@@ -33,7 +33,7 @@ const List = props => {
 		<ol className={listClass}>{listItems}</ol>
 
 	return (
-		isOrdered ? renderOrderedList() : renderUnorderedList() 
+		listType ? renderUnorderedList() : renderOrderedList()
 	)
 
 }

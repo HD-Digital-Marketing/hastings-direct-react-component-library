@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import './list.scss'
 
-const List = (props) => {
+const List = props => {
 
     const {
         children,

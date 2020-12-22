@@ -24,22 +24,18 @@ const List = props => {
 		<li key={index} >{ item }</li>
 	);
 
+	const isList = listType
 
-	switch (ListType) {
-		case 'ul':
-			list = <ul className={listClass}>{listItems}</ul>
-			break;
-		case 'ol':
-			list = <ol className={listClass}>{listItems}</ol>
-			break;
-		default:
-			list = <ul className={listClass}>{listItems}</ul>
-		}
+	const renderUnorderedList = () =>
+		<ul className={listClass}>{listItems}</ul>
 
-	return(
-		list
+	const renderOrderedList = () =>
+		<ol className={listClass}>{listItems}</ol>
+
+	return (
+		isList ? renderUnorderedList() : renderOrderedList()
 	)
 
 }
 
-export default List;
+export default List

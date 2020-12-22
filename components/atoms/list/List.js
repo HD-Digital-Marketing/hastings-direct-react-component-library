@@ -9,7 +9,7 @@ const List = props => {
 		type = 'ul',
 		list,
 		className = '',
-		theme = '',
+		theme = ''
 	} = props
 
 	const listClass = classNames('a-list', className, {

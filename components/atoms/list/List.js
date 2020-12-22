@@ -10,7 +10,6 @@ const List = props => {
 		list,
 		className = '',
 		theme = '',
-		children
 	} = props
 
 	const listClass = classNames('a-list', className, {

@@ -8,12 +8,10 @@ const Playground = () => {
 	const {isShowing, toggle} = useModal()
 
     return (
-        <>
-            <div className="App">
-            	<button className="button-default" onClick={toggle}>Show Modal</button>
-            	<Modal isShowing={isShowing} hide={toggle} />
-            </div>
-        </>
+		<div className="App">
+			<button className="button-default" onClick={toggle}>Show Modal</button>
+			<Modal isShowing={isShowing} hide={toggle} />
+		</div>
     )
 }
 

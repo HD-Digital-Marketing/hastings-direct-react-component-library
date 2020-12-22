@@ -11,6 +11,7 @@ const Link = props => {
 		role = '',
 		target = '',
 		theme = '',
+		className = '',
 		children
 	} = props
 
@@ -30,6 +31,7 @@ Link.propTypes = {
 	role: PropTypes.string,
 	target: PropTypes.string,
 	theme: PropTypes.string,
+	className: PropTypes.string,
 	children: PropTypes.string
 }
 

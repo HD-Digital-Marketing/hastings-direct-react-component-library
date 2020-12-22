@@ -14,12 +14,12 @@ const List = props => {
 
 	let list = '';
 
-    let listClass = classNames({
-        'a-list': true,
-        'a-list--primary': theme === 'primary',
-        'a-list--secondary': theme === 'secondary',
+	let listClass = classNames({
+		'a-list': true,
+		'a-list--primary': theme === 'primary',
+		'a-list--secondary': theme === 'secondary',
 
-    });
+	});
 
 	const items = ['List item 1', 'List item 2', 'List item 3', 'List item 4', 'List item 5']
 
@@ -29,19 +29,19 @@ const List = props => {
 
 
 	switch (ListType) {
-        case 'ul':
-            list = <ul className={listClass}>{listItems}</ul>
-            break;
-        case 'ol':
-            list = <ol className={listClass}>{listItems}</ol>
-            break;
-        default:
-            list = <ul className={listClass}>{listItems}</ul>
-    }
+		case 'ul':
+			list = <ul className={listClass}>{listItems}</ul>
+			break;
+		case 'ol':
+			list = <ol className={listClass}>{listItems}</ol>
+			break;
+		default:
+			list = <ul className={listClass}>{listItems}</ul>
+		}
 
-    return(
-        list
-    )
+	return(
+		list
+	)
 
 }
 

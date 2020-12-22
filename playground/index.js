@@ -5,9 +5,16 @@ import Button from '../components/atoms/button/Button';
 
 import List from '../components/atoms/list/List';
 
+const myList = ['a', 'b', 'c', 250]
+
+const developers = ['Darren', 'Dave', 'Scott', 'Dan']
+
 const Playground = () => {
     return (
-    	<List type='ol' />
+    	<>
+    		<List type='ol' list={myList} />
+    		<List list={developers} />
+    	</>
     )
 }
 

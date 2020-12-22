@@ -7,6 +7,7 @@ const List = props => {
 
 	const {
 		type = 'ul',
+		list,
 		className = '',
 		theme = '',
 		children
@@ -14,15 +15,13 @@ const List = props => {
 
 	const listClass = classNames('a-list', className, {
 		'a-list--primary': theme === 'primary',
-		'a-list--secondary': theme === 'secondary',
+		'a-list--secondary': theme === 'secondary'
 
 	})
 
-	const items = ['List item 1', 'List item 2', 'List item 3', 'List item 4', 'List item 5']
-
-	const listItems = items.map((item, index) =>
-		<li key={index} >{ item }</li>
-	);
+	const listItems = list.map((item, index) =>
+		<li key={index}>{ item }</li>
+	)
 
 	const listType = type && (type.includes('ol'))
 
@@ -35,7 +34,6 @@ const List = props => {
 	return (
 		listType ? renderOrderedList() : renderUnorderedList()
 	)
-
 }
 
 export default List

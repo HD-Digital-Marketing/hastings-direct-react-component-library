@@ -7,7 +7,7 @@ const Modal = ({ isShowing, hide, children }) => isShowing ? ReactDOM.createPort
 	<>
     	<div className="m-modal-overlay" />
     	<div className="m-modal-wrapper">
-      		<div className="m-modal">
+      		<div className="m-modal__container">
         		<div className="m-modal__header">
         			<div>
          				<Button data-dismiss="modal" aria-label="Close" onClick={hide}>&times;</Button>

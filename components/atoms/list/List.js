@@ -35,7 +35,10 @@ const List = props => {
 }
 
 List.propTypes = {
-	type: PropTypes.string
+	type: PropTypes.string,
+	list: PropTypes.array,
+	className: PropTypes.string,
+	theme: PropTypes.string
 }
 
 export default List

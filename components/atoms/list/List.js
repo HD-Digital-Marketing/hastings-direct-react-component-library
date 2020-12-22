@@ -12,14 +12,11 @@ const List = props => {
 		children
 	} = props
 
-	let list = '';
-
-	let listClass = classNames({
-		'a-list': true,
+	const listClass = classNames('a-list', className, {
 		'a-list--primary': theme === 'primary',
 		'a-list--secondary': theme === 'secondary',
 
-	});
+	})
 
 	const items = ['List item 1', 'List item 2', 'List item 3', 'List item 4', 'List item 5']
 

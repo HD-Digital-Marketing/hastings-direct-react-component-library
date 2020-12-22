@@ -1,5 +1,5 @@
 import React from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 import Modal from '../components/molecules/modal/Modal'
 import useModal from '../components/molecules/modal/useModal'
 

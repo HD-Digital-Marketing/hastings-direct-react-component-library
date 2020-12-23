@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Button from '../../atoms/button/Button'
 import Link from '../../atoms/link/Link'
+import './panel.scss'
 
 const Panel = props => {
 
@@ -21,7 +22,7 @@ const Panel = props => {
 
     const renderLink = () =>
         <div className='m-panel__link'>
-            <Link href='https://www.hastingsdirect.com/'>Link Example</Link>
+            <Link theme='primary' href='https://www.hastingsdirect.com/'>Link Example</Link>
         </div>
 
 	return (

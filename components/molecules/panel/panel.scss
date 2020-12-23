@@ -1,0 +1,17 @@
+.m-panel {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 8px 6px -9px #0066a1;
+	padding: 15px;
+	margin: 15px 0;
+
+	&__btn {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	&__link {
+		text-align: center;
+		margin: 10px 0;
+	}
+}

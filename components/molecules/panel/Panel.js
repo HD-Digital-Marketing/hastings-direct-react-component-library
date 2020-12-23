@@ -5,13 +5,19 @@ const Panel = props => {
 
     const {
         children,
-        className = ''
+        className = '',
+        isTest = false
     } = props
 
-	const panelClass = classNames('a-panel', className)
+	const panelClass = classNames('m-panel', className)
+
+    const renderAnchor = () =>
+        <a>Link</a>
 
 	return (
-		<div className={panelClass}>{children}</div>
+		<div className={panelClass}>
+			{isTest ? renderAnchor() : null}
+		</div>
 	)
 }
 

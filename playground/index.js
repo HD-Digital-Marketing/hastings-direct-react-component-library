@@ -4,7 +4,7 @@ import Panel from '../components/molecules/panel/Panel';
 
 const Playground = () => {
     return (
-    	<Panel isTest>Hello Panel</Panel>
+    	<Panel hasButton hasLink>Hello Panel</Panel>
     )
 }
 

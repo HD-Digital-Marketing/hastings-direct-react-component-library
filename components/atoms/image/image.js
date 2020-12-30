@@ -20,6 +20,12 @@ const Image = props => {
 	)
 }
 
-
+Image.propTypes = {
+	src: PropTypes.string,
+	height: PropTypes.number,
+	width: PropTypes.number,
+	alt: PropTypes.string,
+	className: PropTypes.string
+}
 
 export default Image

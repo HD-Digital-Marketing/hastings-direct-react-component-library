@@ -1,13 +1,11 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Title from '../components/atoms/title/Title';
-import Button from '../components/atoms/button/Button';
+import Image from '../components/atoms/image/Image';
 
 const Playground = () => {
     return (
         <>
-            <Title titleType="h2" theme="secondary">A h2 title</Title>
-            <Button type="submit" theme="primary">Click me</Button>
+            <img src="/src/images/hastings-direct.svg" height="100" width="300" class="a-img" alt="Hastings Direct">
         </>
     )
 }

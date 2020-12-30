@@ -8,7 +8,7 @@ const Image = props => {
 	const {
 		src = '',
 		height = '',
-		width = ''
+		width = '',
 		alt = '',
 		className = ''
 	} = props
@@ -16,16 +16,10 @@ const Image = props => {
 	const imageClass = classNames('a-img', className)
 
 	return(
-		<img {...{ src, height, width, alt }} className={imageClass}>
+		<img {...{ src, height, width, alt }} className={imageClass} />
 	)
 }
 
-Image.propTypes = {
-	src: PropTypes.string,
-	height: PropTypes.string,
-	width: PropTypes.string,
-	alt: PropTypes.string,
-	className: PropTypes.string
-}
+
 
 export default Image

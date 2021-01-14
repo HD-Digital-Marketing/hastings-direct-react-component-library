@@ -1,15 +1,14 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import Title from './Title';
 
 describe('Check the title renders', () => {
-    test('it should render the title', () => {
+    test('it should match the snapshot', () => {
 
-        const renderedTitle = Title({
-            theme: 'primary',
-            titleType: 'h3',
-            children: 'I am a h3 title'
-        });
+        const tree = renderer
+            .create(<Title titleType="h3" theme="primary">I am a h3 title</Title>)
+            .toJSON();
+        expect(tree).toMatchSnapshot();
 
-        expect(renderedTitle).toEqual(<h3 className="a-title a-title--primary">I am a h3 title</h3>);
     });
 });

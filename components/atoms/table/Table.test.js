@@ -1,31 +1,18 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import Table from './Table';
 
 describe('Check the table renders', () => {
-	test('it should render the table', () => {
+	test('it should match the snapshot', () => {
 
-		const tableHeaders = [
-			'First name',
-			'Last name',
-			'Age',
-			'Gender'
-		]
+		const tableHeaders = ['First name', 'Last name', 'Age', 'Gender']
 
-		const tableData = [
-			[
-				'Jack',
-				'Smith',
-				'29',
-				'Male'
-			]
-		]
+		const tableData = [['Jack', 'Smith', '29', 'Male'], ['Tom', 'Jones', '56', 'Male']]
 
-		const renderedTable = Table({
-			tableHeaders: tableHeaders,
-			tableData: tableData,
-			theme: 'primary'
-		});
+		const tree = renderer
+			.create(<Table tableHeaders={tableHeaders} tableData={tableData} theme="primary" />)
+			.toJSON();
+		expect(tree).toMatchSnapshot();
 
-		expect(renderedTable).toEqual(<table className="a-table a-table--primary"><thead><tr><th>First name</th><th>Last name</th><th>Age</th><th>Gender</th></tr></thead><tbody><tr><td>Jack</td><td>Smith</td><td>29</td><td>Male</td></tr></tbody></table>);
 	});
 });

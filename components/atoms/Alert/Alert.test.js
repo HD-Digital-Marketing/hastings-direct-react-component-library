@@ -1,14 +1,14 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import Alert from './Alert';
 
 describe('Check the alert renders', () => {
-    test('it should render the alert', () => {
+    test('it should match the snapshot', () => {
 
-        const renderedAlert = Alert({
-            theme: 'error',
-            children: 'This is an error message'
-        });
+        const tree = renderer
+            .create(<Alert theme="error">This is an error message</Alert>)
+            .toJSON();
+        expect(tree).toMatchSnapshot();
 
-        expect(renderedAlert).toEqual(<div className="a-alert a-alert--error"><span className="a-alert__icon">✕</span>This is an error message</div>);
     });
 });

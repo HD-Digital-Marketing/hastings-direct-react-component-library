@@ -1,37 +1,14 @@
 import React from 'react'
+import renderer from 'react-test-renderer';
 import Input from './Input'
 
 describe('Check the input renders', () => {
-    test('it should render the input', () => {
+    test('it should match the snapshot', () => {
 
-        const renderedInput = Input({
-            type: 'search',
-            id: 'someID',
-            value: '1234',
-            name: 'testInput',
-            placeholder: 'Test text'
-        });
+        const tree = renderer
+            .create(<Input id="someId" value="123456789" name="someName" placeholder="This is placeholder text" />)
+            .toJSON();
+        expect(tree).toMatchSnapshot();
 
-        expect(renderedInput).toEqual(
-            <input id="someID"
-                   length=""
-                   maxLength=""
-                   size=""
-                   min=""
-                   max=""
-                   step=""
-                   autoComplete="on"
-                   type="search"
-                   name="testInput"
-                   placeholder="Test text"
-                   className="a-input"
-                   defaultValue="1234"
-                   autoFocus={false}
-                   disabled={false}
-                   multiple={false}
-                   readOnly={false}
-                   required={false}
-            />
-            )
     });
 });

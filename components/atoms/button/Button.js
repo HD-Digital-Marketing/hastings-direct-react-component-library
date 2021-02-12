@@ -38,7 +38,7 @@ Button.propTypes = {
   className: PropTypes.string,
   theme: PropTypes.string,
   children: PropTypes.string,
-  onClick: PropTypes.string
+  onClick: PropTypes.func
 }
 
 export default Button

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the link renders it should match the snapshot 1`] = `
+<a
+  className="a-link a-link--primary"
+  href="https://google.com"
+  rel="noopener noreferrer"
+  role="button"
+  target="_blank"
+>
+  Click me I'm a link
+</a>
+`;

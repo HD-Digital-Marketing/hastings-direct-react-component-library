@@ -1,0 +1,14 @@
+@import '../../../src/scss/variables/variables';
+
+.a-list {
+
+	color: $color-dark;
+
+	&--primary {
+		color: $color-brand-primary;
+	}
+
+	&--secondary {
+		color: $color-brand-secondary;
+	}
+}

@@ -217,25 +217,3 @@
 * {
 	font-family: 'TT Norms Pro', "Helvetica Neue", BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-body {
-	height: 100vh;
-
-	> div {
-		height: 100%;
-		display: flex;
-	}
-}
-
-.half {
-	height: 100%;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	&--dark {
-		background-color: #011831;
-	}
-}

@@ -1,0 +1,41 @@
+@import '../../../src/scss/variables/variables';
+
+.a-table {
+	width: 100%;
+	margin: 1em auto;
+	padding: 0.5em;
+	border: 1px solid $color-light;
+	border-collapse: collapse;
+	text-align: left;
+
+	thead {
+		background-color: lighten($color-light, 8%);
+	}
+
+	tr {
+		border-bottom: 1px solid $color-light;
+	}
+
+	td, th {
+		border-right: 1px solid $color-light;
+		padding: 1em;
+
+		&:last-of-type {
+			border-right: none;
+		}
+	}
+
+	&--primary {
+		thead {
+			background-color: $color-brand-primary;
+			color: #fff;
+		}
+	}
+
+	&--secondary {
+		thead {
+			background-color: $color-brand-secondary;
+			color: #fff;
+		}
+	}
+}

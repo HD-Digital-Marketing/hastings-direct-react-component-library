@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the table renders it should match the snapshot 1`] = `
+<table
+  className="a-table a-table--primary"
+>
+  <thead>
+    <tr>
+      <th>
+        First name
+      </th>
+      <th>
+        Last name
+      </th>
+      <th>
+        Age
+      </th>
+      <th>
+        Gender
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Jack
+      </td>
+      <td>
+        Smith
+      </td>
+      <td>
+        29
+      </td>
+      <td>
+        Male
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Tom
+      </td>
+      <td>
+        Jones
+      </td>
+      <td>
+        56
+      </td>
+      <td>
+        Male
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

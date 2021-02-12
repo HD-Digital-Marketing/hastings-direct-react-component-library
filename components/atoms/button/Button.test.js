@@ -1,15 +1,14 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import Button from './Button';
 
 describe('Check the button renders', () => {
-    test('it should render the button', () => {
+    test('it should match the snapshot', () => {
 
-        const renderedButton = Button({
-            theme: 'primary',
-            type: 'button',
-            children: 'Click me'
-        });
+        const tree = renderer
+            .create(<Button type="button" theme="primary">Click me I'm a button</Button>)
+            .toJSON();
+        expect(tree).toMatchSnapshot();
 
-        expect(renderedButton).toEqual(<button className="a-btn a-btn--primary" type="button">Click me</button>);
     });
 });

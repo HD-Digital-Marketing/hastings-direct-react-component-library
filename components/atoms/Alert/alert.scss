@@ -1,0 +1,63 @@
+@import '../../../src/scss/variables/variables';
+
+.a-alert {
+	padding: 1em;
+	margin-top: 1em;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: $color-light;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+	border: 1px solid darken($color-light, 5%);
+
+	&__icon {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		background-color: #fff;
+		border-radius: 50%;
+		margin-right: 1em;
+		line-height: 25px;
+		text-align: center;
+	}
+
+	&--success {
+		background-color: $color-success;
+		color: #fff;
+		border: 1px solid darken($color-success, 5%);
+
+		.a-alert__icon {
+			color: $color-success;
+		}
+	}
+
+	&--info {
+		background-color: $color-info;
+		color: #fff;
+		border: 1px solid darken($color-info, 5%);
+
+		.a-alert__icon {
+			color: $color-info;
+		}
+	}
+
+	&--warning {
+		background-color: $color-warning;
+		color: #fff;
+		border: 1px solid darken($color-warning, 5%);
+
+		.a-alert__icon {
+			color: $color-warning;
+		}
+	}
+
+	&--error {
+		background-color: $color-error;
+		color: #fff;
+		border: 1px solid darken($color-error, 5%);
+
+		.a-alert__icon {
+			color: $color-error;
+		}
+	}
+}

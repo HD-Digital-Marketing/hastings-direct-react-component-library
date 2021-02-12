@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Title from './Title';
+import Alert from './Alert';
 
-describe('Check the title renders', () => {
+describe('Check the alert renders', () => {
     test('it should match the snapshot', () => {
 
         const tree = renderer
-            .create(<Title titleType="h3" theme="primary">I am a h3 title</Title>)
+            .create(<Alert theme="error">This is an error message</Alert>)
             .toJSON();
         expect(tree).toMatchSnapshot();
 

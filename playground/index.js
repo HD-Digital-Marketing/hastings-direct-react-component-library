@@ -1,18 +1,22 @@
-import React from 'react';
-import {render} from 'react-dom';
-import Title from '../components/atoms/title/Title';
-import Button from '../components/atoms/button/Button';
+import React from 'react'
+import { render } from 'react-dom'
+import Button from '../components/atoms/button/Button'
+import Modal from '../components/molecules/modal/Modal'
+import useModal from '../components/molecules/modal/useModal'
 
 const Playground = () => {
+
+	const {isShowing, toggle} = useModal()
+
     return (
-        <>
-            <Title titleType="h2" theme="secondary">A h2 title</Title>
-            <Button type="submit" theme="primary">Click me</Button>
-        </>
+		<>
+			<Button onClick={toggle} theme='primary'>Modal</Button>
+			<Modal isShowing={isShowing} hide={toggle}>Hello this is a modal</Modal>
+		</>
     )
 }
 
 render(
     <Playground />,
     document.getElementById('root')
-);
+)

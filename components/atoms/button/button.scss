@@ -1,20 +1,22 @@
 @import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/fonts';
 
 .a-btn {
 	background-color: transparent;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	color: $color-dark;
+	border: 2px solid transparent;
+	border-radius: 6px;
+	color: $color-white;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: bold;
-	padding: 0.5em 1em;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+	padding: 0.55em 3em;
 	margin: 0 auto;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
-	transition: background-color 0.2s;
+	transition: background-color 0.2s, border 0.2s;
 	vertical-align: middle;
 
 	&:hover {
@@ -34,22 +36,158 @@
 	}
 
 	&--primary {
-		background-color: $color-brand-primary;
-		color: $color-light;
+		background-color: $color-brand-green;
+		color: $color-white;
 
 		&:hover {
-			background-color: darken($color-brand-primary, 5%);
-			color: $color-light;
+			border: 2px solid $color-brand-green;
+			background-color: transparent;
+			color: $color-brand-blue-dark;
+		}
+
+		&:focus {
+			border: 2px solid $color-brand-green;
+			background-color: $color-brand-blue-grey-lighter;
+			color: $color-brand-blue-dark;
+			outline: none;
+			box-shadow: 0 0 0 1px rgba($color-brand-green, 0.9);
+		}
+	}
+
+	&--primary-on-dark {
+		background-color: $color-brand-green;
+		color: $color-white;
+
+		&:hover {
+			border: 2px solid $color-brand-green;
+			background-color: transparent;
+			color: $color-white;
+		}
+
+		&:focus {
+			border: 2px solid $color-brand-green;
+			background-color: $color-brand-blue-grey-dark;
+			color: $color-white;
+			outline: none;
+			box-shadow: 0 0 0 1px rgba($color-brand-green, 0.9);
 		}
 	}
 
 	&--secondary {
-		background-color: $color-brand-secondary;
-		color: $color-light;
+		background-color: rgba($color-brand-green, 0.2);
+		color: $color-brand-blue-dark;
+		border: 2px solid $color-brand-green;
 
 		&:hover {
-			background-color: darken($color-brand-secondary, 5%);
-			color: $color-light;
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: transparent;
+			color: $color-brand-blue-dark;
+		}
+
+		&:focus {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: $color-brand-blue-grey-lighter;
+			color: $color-brand-blue-dark;
+			outline: none;
+			box-shadow: 0 0 0 1px rgba($color-brand-blue-grey-mid, 0.9);
+		}
+	}
+
+	&--secondary-on-dark {
+		background-color: rgba($color-brand-green, 0.2);
+		color: $color-white;
+		border: 2px solid $color-brand-green;
+
+		&:hover {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: transparent;
+			color: $color-white;
+		}
+
+		&:focus {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: $color-brand-blue-grey-dark;
+			color: $color-white;
+			outline: none;
+			box-shadow: 0 0 0 1px rgba($color-brand-blue-grey-mid, 0.9);
+		}
+	}
+
+	&--tertiary {
+		background-color: $color-brand-blue-grey-lighter;
+		color: $color-brand-blue-dark;
+		border: 2px solid $color-brand-blue-grey-light;
+
+		&:hover {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: transparent;
+			color: $color-brand-blue-dark;
+		}
+
+		&:focus {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: $color-brand-blue-grey-lighter;
+			color: $color-brand-blue-dark;
+			outline: none;
+			box-shadow: 0 0 0 1px rgba($color-brand-blue-grey-mid, 0.9);
+		}
+	}
+
+	&--tertiary-on-dark {
+		background-color: $color-brand-blue-grey-dark;
+		color: $color-white;
+		border: 2px solid $color-brand-blue-grey-light;
+
+		&:hover {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: transparent;
+			color: $color-white;
+		}
+
+		&:focus {
+			border: 2px solid $color-brand-blue-grey-mid;
+			background-color: $color-brand-blue-grey-dark;
+			color: $color-white;
+			outline: none;
+			box-shadow: 0 0 0 1px rgba($color-brand-blue-grey-mid, 0.9);
+		}
+	}
+
+	&--dashed {
+		background-color: rgba($color-brand-green, 0.2);
+		color: $color-brand-blue-dark;
+		border: 2px dashed $color-brand-green;
+
+		&:hover {
+			border: 2px dashed $color-brand-green;
+			background-color: transparent;
+			color: $color-brand-blue-dark;
+		}
+
+		&:focus {
+			border: 2px dashed $color-brand-green;
+			background-color: $color-brand-blue-grey-lighter;
+			color: $color-brand-blue-dark;
+			outline: none;
+		}
+	}
+
+	&--dashed-on-dark {
+		background-color: rgba($color-brand-green, 0.2);
+		color: $color-white;
+		border: 2px dashed $color-brand-green;
+
+		&:hover {
+			border: 2px dashed $color-brand-green;
+			background-color: transparent;
+			color: $color-white;
+		}
+
+		&:focus {
+			border: 2px dashed $color-brand-green;
+			background-color: $color-brand-blue-grey-dark;
+			color: $color-white;
+			outline: none;
 		}
 	}
 }

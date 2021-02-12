@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check the alert renders it should match the snapshot 1`] = `
+exports[`Check the input renders it should match the snapshot 1`] = `
 <input
   autoComplete="on"
   autoFocus={false}

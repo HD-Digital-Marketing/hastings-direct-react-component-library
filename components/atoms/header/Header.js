@@ -1,20 +1,26 @@
 import React from 'react';
-import './title.scss';
+import './header.scss';
 import classNames from "classnames";
 
-const Title = (props) => {
+const Header = (props) => {
 
     const {
         children,
         titleType = 'h1',
+        className = '',
         theme
     } = props;
     let title = '';
 
-    let titleClass = classNames({
-        'a-title': true,
-        'a-title--primary': theme === 'primary',
-        'a-title--secondary': theme === 'secondary',
+    let titleClass = classNames('a-header', className, {
+        'a-header--primary': theme === 'primary',
+        'a-header--primary-xl': theme === 'primary-xl',
+        'a-header--primary-on-dark': theme === 'primary-dark',
+        'a-header--primary-on-dark-xl': theme === 'primary-dark-xl',
+        'a-header--secondary': theme === 'secondary',
+        'a-header--secondary-xl': theme === 'secondary-xl',
+        'a-header--secondary-on-dark': theme === 'secondary-dark',
+        'a-header--secondary-on-dark-xl': theme === 'secondary-dark-xl',
 
     });
 
@@ -47,4 +53,4 @@ const Title = (props) => {
 
 }
 
-export default Title;
+export default Header;

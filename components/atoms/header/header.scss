@@ -1,66 +1,37 @@
 @import '../../../src/scss/variables/variables';
-@import '../../../src/scss/global/fonts';
 @import '../../../src/scss/global/type';
 
 .a-header {
 
 	&--primary {
 		color: $color-brand-blue-dark;
-	}
 
-	&--primary-xl {
-		line-height: 116.5%;
-		font-size: 3rem;
-		color: $color-brand-blue-dark;
-
-		@media only screen and (min-width : 480px) {
-			line-height: 120%;
-			font-size: 3.375rem;
+		&-xl {
+			@include type(1.165, 3.375rem, 3rem, 480px, $color-brand-blue-dark);
 		}
-	}
 
-	&--primary-on-dark {
-		color: $color-white;
-	}
+		&-on-dark {
+			color: $color-white;
 
-	&--primary-on-dark-xl {
-		line-height: 116.5%;
-		font-size: 3rem;
-		color: $color-white;
-
-		@media only screen and (min-width : 480px) {
-			line-height: 120%;
-			font-size: 3.375rem;
+			&-xl {
+				@include type(1.165, 3.375rem, 3rem, 480px, $color-white);
+			}
 		}
 	}
 
 	&--secondary {
 		color: $color-brand-blue-grey-light;
-	}
 
-	&--secondary-xl {
-		line-height: 116.5%;
-		font-size: 3rem;
-		color: $color-brand-blue-grey-light;
-
-		@media only screen and (min-width : 480px) {
-			line-height: 120%;
-			font-size: 3.375rem;
+		&-xl {
+			@include type(1.165, 3.375rem, 3rem, 480px, $color-brand-blue-grey-light);
 		}
-	}
 
-	&--secondary-on-dark {
-		color: $color-brand-blue-grey-mid;
-	}
+		&-on-dark {
+			color: $color-brand-blue-grey-mid;
 
-	&--secondary-on-dark-xl {
-		line-height: 116.5%;
-		font-size: 3rem;
-		color: $color-brand-blue-grey-mid;
-
-		@media only screen and (min-width : 480px) {
-			line-height: 120%;
-			font-size: 3.375rem;
+			&-xl {
+				@include type(1.165, 3.375rem, 3rem, 480px, $color-brand-blue-grey-mid);
+			}
 		}
 	}
 }

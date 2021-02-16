@@ -6,13 +6,13 @@ const Header = (props) => {
 
     const {
         children,
-        titleType = 'h1',
+        headerType = 'h1',
         className = '',
         theme
     } = props;
-    let title = '';
+    let header = '';
 
-    let titleClass = classNames('a-header', className, {
+    let headerClass = classNames('a-header', className, {
         'a-header--primary': theme === 'primary',
         'a-header--primary-xl': theme === 'primary-xl',
         'a-header--primary-on-dark': theme === 'primary-dark',
@@ -24,31 +24,31 @@ const Header = (props) => {
 
     });
 
-    switch (titleType) {
+    switch (headerType) {
         case 'h1':
-            title = <h1 className={titleClass}>{children}</h1>
+            header = <h1 className={headerClass}>{children}</h1>
             break;
         case 'h2':
-            title = <h2 className={titleClass}>{children}</h2>
+            header = <h2 className={headerClass}>{children}</h2>
             break;
         case 'h3':
-            title = <h3 className={titleClass}>{children}</h3>
+            header = <h3 className={headerClass}>{children}</h3>
             break;
         case 'h4':
-            title = <h4 className={titleClass}>{children}</h4>
+            header = <h4 className={headerClass}>{children}</h4>
             break;
         case 'h5':
-            title = <h5 className={titleClass}>{children}</h5>
+            header = <h5 className={headerClass}>{children}</h5>
             break;
         case 'h6':
-            title = <h6 className={titleClass}>{children}</h6>
+            header = <h6 className={headerClass}>{children}</h6>
             break;
         default:
-            title = <h1 className={titleClass}>{children}</h1>
+            header = <h1 className={headerClass}>{children}</h1>
     }
 
     return (
-        title
+        header
     )
 
 }

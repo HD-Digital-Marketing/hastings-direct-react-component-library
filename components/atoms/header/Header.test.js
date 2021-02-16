@@ -6,7 +6,7 @@ describe('Check the title renders', () => {
     test('it should match the snapshot', () => {
 
         const tree = renderer
-            .create(<Header titleType="h3" theme="primary">I am a h3 title</Header>)
+            .create(<Header headerType="h3" theme="primary">I am a h3 title</Header>)
             .toJSON();
         expect(tree).toMatchSnapshot();
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const Header = props => {
 

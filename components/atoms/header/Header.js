@@ -10,7 +10,7 @@ const Header = props => {
         className = '',
         theme
     } = props;
-    
+
     let header = '';
 
     let headerClass = classNames('a-header', className, {

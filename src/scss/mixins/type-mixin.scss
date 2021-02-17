@@ -1,0 +1,13 @@
+@mixin type($line-height, $font-size-desktop, $font-size-mobile, $breakpoint, $color: '') {
+	margin: 0.5em 0;
+	line-height: $line-height;
+	font-size: $font-size-mobile;
+
+	@if($color != '') {
+		color: $color;
+	}
+
+	@media only screen and (min-width : $breakpoint) {
+		font-size: $font-size-desktop;
+	}
+}

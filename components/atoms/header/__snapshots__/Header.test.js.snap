@@ -2,7 +2,7 @@
 
 exports[`Check the title renders it should match the snapshot 1`] = `
 <h3
-  className="a-title a-title--primary"
+  className="a-header a-header--primary"
 >
   I am a h3 title
 </h3>

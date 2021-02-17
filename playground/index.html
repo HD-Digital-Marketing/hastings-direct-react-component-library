@@ -3,6 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Playground</title>
+	<style>
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.playground-container {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+		}
+
+		.playground-container__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 50%;
+			height: 100%;
+			padding: 1em;
+		}
+
+		.playground-container__item:nth-child(1) {
+			background-color: #011831;
+		}
+
+	</style>
 </head>
 <body>
 <div id="root"></div>

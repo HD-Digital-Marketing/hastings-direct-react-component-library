@@ -1,46 +1,90 @@
 @import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/type';
 
 .a-link {
-	color: $color-dark;
-	text-decoration: underline;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
 	text-shadow: none;
-	transition: color 0.2s, text-decoration 0.2s;
 
 	&:hover {
-		color: lighten($color-dark, 5%);
 		text-decoration: none;
 	}
 
-	&:active,
-	&:focus {
-		color: lighten($color-dark, 10%);
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $color-brand-blue-mid-light;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		transition: width 0.5s cubic-bezier(1, 0, 0, 1);
 	}
 
 	&--primary {
-		color: $color-brand-primary;
+		color: $color-brand-blue-dark;
 
 		&:hover {
-			color: lighten($color-brand-primary, 5%);
-			text-decoration: none;
+			color: $color-brand-blue-dark;
+
+			&:after {
+				width: 100%;
+				background-color: $color-brand-blue-mid-light;
+			}
 		}
 
 		&:active,
 		&:focus {
-			color: lighten($color-brand-primary, 10%);
-		}
-	}
+			color: $color-brand-blue-dark;
 
-	&--secondary {
-		color: $color-brand-secondary;
-		
-		&:hover {
-			color: lighten($color-brand-secondary, 5%);
-			text-decoration: none;
+			&:before {
+				width: 100%;
+				background-color: $color-brand-blue-grey-lighter;
+			}
+
+			&:after {
+				width: 100%;
+				background-color: $color-brand-blue-grey-lighter;
+			}
 		}
 
-		&:active,
-		&:focus {
-			color: lighten($color-brand-secondary, 10%);
+		&-on-dark {
+			color: $color-white;
+
+			&:hover {
+				color: $color-white;
+
+				&:after {
+					width: 100%;
+					background-color: $color-brand-blue-mid-light;
+				}
+			}
+
+			&:active,
+			&:focus {
+				color: $color-white;
+
+				&:before {
+					width: 100%;
+					background-color: $color-brand-blue-grey-dark;
+				}
+
+				&:after {
+					width: 100%;
+					background-color: $color-brand-blue-grey-dark;
+				}
+			}
 		}
 	}
 }

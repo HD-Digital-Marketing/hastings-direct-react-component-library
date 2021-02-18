@@ -48,7 +48,8 @@
 		&:focus {
 			color: $color-brand-blue-dark;
 
-			&:before, &:after {
+			&:before,
+			&:after {
 				width: 100%;
 				background-color: $color-brand-blue-grey-lighter;
 			}
@@ -67,7 +68,8 @@
 			&:active,
 			&:focus {
 
-				&:before, &:after {
+				&:before,
+				&:after {
 					width: 100%;
 					background-color: $color-brand-blue-grey-dark;
 				}

@@ -7,9 +7,7 @@ const Playground = () => {
 
     return (
         <>
-            <div className="playground-container">
-                <Message />
-            </div>
+            <Message>Test of the message</Message>
         </>
     )
 }

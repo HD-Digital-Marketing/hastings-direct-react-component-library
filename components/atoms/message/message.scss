@@ -1,0 +1,17 @@
+.a-message {
+	background-color: #01355a;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	line-height: 1.2;
+	padding: 1.250em 1.563em;
+	border-radius: 6px;
+	max-width: 630px;
+	margin: 0 auto;
+	vertical-align: middle;
+
+	&--error {
+		background-color: #a90d30;
+	}
+}

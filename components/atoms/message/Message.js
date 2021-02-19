@@ -8,12 +8,14 @@ const Message = props => {
 	const {
 		theme = '',
 		className = '',
+		isError = false,
 		children
 	} = props
 
 	const messageClass = classNames('a-message', className, {
 		'a-message--primary': theme === 'primary',
-		'a-message--primary-on-dark': theme === 'primary-dark'
+		'a-message--primary-on-dark': theme === 'primary-dark',
+		'a-message--error': isError
 	})
 
 	return(
@@ -24,6 +26,7 @@ const Message = props => {
 Message.propTypes = {
 	theme: PropTypes.string,
 	className: PropTypes.string,
+	isError: PropTypes.boolean,
 	children: PropTypes.string
 }
 

@@ -3,4 +3,9 @@
 	color: #fff;
 	padding: 12px;
 	border-radius: 6px;
+	max-width: 630px;
+
+	&--error {
+		background-color: #a90d30;
+	}
 }

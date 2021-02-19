@@ -7,7 +7,7 @@ const Playground = () => {
 
     return (
         <>
-            <Message isError>Test of the message</Message>
+            <Message isError>Sorry, we can't find that reg number. Please check and try again.</Message>
         </>
     )
 }

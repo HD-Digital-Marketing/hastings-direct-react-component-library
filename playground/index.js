@@ -7,7 +7,7 @@ const Playground = () => {
 
     return (
         <>
-            <Message>Test of the message</Message>
+            <Message isError>Test of the message</Message>
         </>
     )
 }

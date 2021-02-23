@@ -118,29 +118,26 @@
 		}
 
 		&--icon {
+
+			&:before {
+				content: '';
+				top: 50%;
+				transform: translateY(-50%);
+				background-size: 30px 30px;
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 30px;
+			}
+
 			&-left {
 				&:before {
-					content: '';
-					top: 50%;
 					left: 1em;
-					transform: translateY(-50%);
-					background-size: 30px 30px;
-					background-repeat: no-repeat;
-					width: 30px;
-					height: 30px;
 				}
 			}
 
 			&-right {
 				&:before {
-					content: '';
-					top: 50%;
 					right: 1em;
-					transform: translateY(-50%);
-					background-size: 30px 30px;
-					background-repeat: no-repeat;
-					width: 30px;
-					height: 30px;
 				}
 			}
 		}

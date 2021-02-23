@@ -30,7 +30,7 @@ const Input = props => {
         icon
     } = props
 
-    let rule = css({
+    let inlineCss = css({
         ':before': {
             'background-image': `url(${icon ?? ''})`
         },
@@ -60,14 +60,14 @@ const Input = props => {
         'a-input__wrap--value a-input__wrap--error': wrapClass === 'value-error',
         'a-input__wrap--miles': wrapClass === 'miles',
         'a-input__wrap--miles a-input__wrap--error': wrapClass === 'miles-error',
-        'a-input__wrap--icon-left': wrapClass === 'icon-left',
-        'a-input__wrap--icon-left a-input__wrap--error': wrapClass === 'icon-left-error',
-        'a-input__wrap--icon-right': wrapClass === 'icon-right',
-        'a-input__wrap--icon-right a-input__wrap--error': wrapClass === 'icon-right-error'
+        'a-input__wrap--icon a-input__wrap--icon-left': wrapClass === 'icon-left',
+        'a-input__wrap--icon a-input__wrap--icon-left a-input__wrap--error': wrapClass === 'icon-left-error',
+        'a-input__wrap--icon a-input__wrap--icon-right': wrapClass === 'icon-right',
+        'a-input__wrap--icon a-input__wrap--icon-right a-input__wrap--error': wrapClass === 'icon-right-error'
     })
 
     return (
-        <div className={inputWrapClass} {...rule}>
+        <div className={inputWrapClass} {...inlineCss}>
             <input {...{
                 id,
                 size,

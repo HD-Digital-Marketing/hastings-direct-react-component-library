@@ -10,7 +10,7 @@
 	border: 2px solid $color-brand-blue-grey-light;
 	outline: none;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: $color-brand-blue-dark;
 
 	&::placeholder {
@@ -43,13 +43,8 @@
 	&__wrap {
 		position: relative;
 
+		&:before,
 		&:after {
-			content: '';
-			position: absolute;
-			z-index: 1;
-		}
-
-		&:before {
 			content: '';
 			position: absolute;
 			z-index: 1;

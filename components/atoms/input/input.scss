@@ -1,0 +1,183 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/fonts';
+
+.a-input {
+	position: relative;
+	box-sizing: border-box;
+	padding: 1em;
+	width: 100%;
+	border-radius: 6px;
+	border: 2px solid $color-brand-blue-grey-light;
+	outline: none;
+	font-weight: 500;
+	font-size: 1.125rem;
+	color: $color-brand-blue-dark;
+
+	&::placeholder {
+		color: $color-brand-blue-grey-mid;
+		opacity: 0.8;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color-brand-blue-grey-mid;
+		opacity: 0.8;
+	}
+
+	&::-ms-input-placeholder {
+		color: $color-brand-blue-grey-mid;
+		opacity: 0.8;
+	}
+
+	&:focus {
+		border: 2px solid $color-brand-blue-grey-mid;
+	}
+
+	&:active {
+		border: 2px solid $color-brand-blue-mid-light;
+	}
+
+	&:read-only {
+		background-color: $color-brand-cotton-ball;
+	}
+
+	&__wrap {
+		position: relative;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+		}
+
+		&--error,
+		&--success {
+			&:after {
+				background-size: 25px 25px;
+				background-repeat: no-repeat;
+				top: -10px;
+				right: -10px;
+				width: 25px;
+				height: 25px;
+			}
+		}
+
+		&--error {
+			&:after {
+				background-image: url('../../../src/img/Icons_Exclamation.svg');
+			}
+		}
+
+		&--success {
+			&:after {
+				background-image: url('../../../src/img/Icons_Tick.svg');
+			}
+		}
+
+		&--reg,
+		&--value {
+			&:before {
+				color: $color-white;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 4em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-bottom-left-radius: 6px;
+				border-top-left-radius: 6px;
+			}
+		}
+
+		&--reg {
+			&:before {
+				content: 'GB';
+				font-family: "Charles Wright", "Helvetica Neue", BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				font-size: 1rem;
+				background-color: $color-brand-blue-mid-light;
+			}
+		}
+
+		&--value {
+			&:before {
+				content: '£';
+				font-size: 1rem;
+				background-color: $color-brand-purple;
+			}
+		}
+
+		&--miles {
+			&:before {
+				content: 'Miles';
+				top: 50%;
+				right: 1em;
+				transform: translateY(-50%);
+				color: $color-brand-blue-grey-mid;
+			}
+		}
+
+		&--icon {
+
+			&:before {
+				content: '';
+				top: 50%;
+				transform: translateY(-50%);
+				background-size: 30px 30px;
+				background-repeat: no-repeat;
+				width: 30px;
+				height: 30px;
+			}
+
+			&-left {
+				&:before {
+					left: 1em;
+				}
+			}
+
+			&-right {
+				&:before {
+					right: 1em;
+				}
+			}
+		}
+	}
+
+	&--success {
+		border: 2px solid $color-brand-blue-mid-light;
+	}
+
+	&--error {
+		border: 2px solid $color-brand-error-red;
+
+		&:active,
+		&:focus {
+			border: 2px solid $color-brand-error-red;
+		}
+	}
+
+	&--reg {
+		font-family: "Charles Wright", "Helvetica Neue", BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-size: 1.625rem;
+		padding: 0.5em 0.5em 0.5em 3em;
+		text-transform: uppercase;
+	}
+
+	&--value {
+		padding: 1em 1em 1em 4.5em;
+	}
+
+	&--miles {
+		padding: 1em 4em 1em 1em;
+	}
+
+	&--icon {
+		&-left {
+			padding: 1em 1em 1em 3em;
+		}
+
+		&-right {
+			padding: 1em 3em 1em 1em;
+		}
+	}
+}

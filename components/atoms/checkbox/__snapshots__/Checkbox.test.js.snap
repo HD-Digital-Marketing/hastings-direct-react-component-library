@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the checkbox renders it should match the snapshot 1`] = `
+<div
+  className="a-checkbox"
+>
+  <input
+    defaultChecked={true}
+    disabled={false}
+    id="checkboxOne"
+    name="checkboxOne"
+    readOnly={false}
+    type="checkbox"
+    value="Car"
+  />
+  <label>
+    Car
+  </label>
+</div>
+`;

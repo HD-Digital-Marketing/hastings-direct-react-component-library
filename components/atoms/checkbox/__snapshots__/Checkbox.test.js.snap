@@ -13,7 +13,9 @@ exports[`Check the checkbox renders it should match the snapshot 1`] = `
     type="checkbox"
     value="Car"
   />
-  <label>
+  <label
+    htmlFor="checkboxOne"
+  >
     Car
   </label>
 </div>

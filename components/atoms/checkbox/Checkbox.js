@@ -9,6 +9,7 @@ const Checkbox = props => {
         className = '',
         theme = '',
         name,
+        id,
         value,
         checked = false,
         disabled = false,
@@ -22,8 +23,8 @@ const Checkbox = props => {
 
     return (
         <div className={checkboxClass}>
-            <input type="checkbox" id={name} name={name} value={value} defaultChecked={checked} disabled={disabled} readOnly={readOnly}/>
-            <label>
+            <input type="checkbox" id={id} name={name} value={value} defaultChecked={checked} disabled={disabled} readOnly={readOnly}/>
+            <label htmlFor={name}>
                 {children}
             </label>
         </div>
@@ -35,6 +36,7 @@ Checkbox.propTypes = {
     className: PropTypes.string,
     theme: PropTypes.string,
     name: PropTypes.string,
+    id: PropTypes.string,
     value: PropTypes.string,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,

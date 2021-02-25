@@ -17,8 +17,7 @@ const Checkbox = props => {
     } = props
 
     const checkboxClass = classNames('a-checkbox', className, {
-        'a-checkbox--on-dark': theme === 'dark',
-        'a-checkbox--secondary': theme === 'secondary',
+        'a-checkbox--on-dark': theme === 'dark'
     })
 
     return (
@@ -32,10 +31,15 @@ const Checkbox = props => {
 }
 
 Checkbox.propTypes = {
-  type: PropTypes.string,
-  className: PropTypes.string,
-  theme: PropTypes.string,
-  children: PropTypes.string,
+    type: PropTypes.string,
+    className: PropTypes.string,
+    theme: PropTypes.string,
+    name: PropTypes.string,
+    value: PropTypes.string,
+    checked: PropTypes.bool,
+    disabled: PropTypes.bool,
+    readOnly: PropTypes.bool,
+    children: PropTypes.string,
 }
 
 export default Checkbox

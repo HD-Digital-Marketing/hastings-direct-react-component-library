@@ -15,8 +15,7 @@
 			}
 		}
 
-		input[type=checkbox],
-		input[type=radio] {
+		input[type=checkbox] {
 			&[disabled],
 			&[readonly] {
 				& + label {
@@ -82,8 +81,7 @@
 		}
 	}
 
-	input[type=checkbox],
-	input[type=radio] {
+	input[type=checkbox] {
 		appearance: none;
 		outline: none;
 		position: absolute;
@@ -153,8 +151,7 @@
 				background-color: transparent;
 			}
 
-			input[type=checkbox],
-			input[type=radio] {
+			input[type=checkbox] {
 				&[disabled],
 				&[readonly] {
 					& + label {
@@ -200,8 +197,7 @@
 			}
 		}
 
-		input[type=checkbox],
-		input[type=radio]  {
+		input[type=checkbox] {
 			&:checked {
 				& + label {
 					background-color: $color-brand-blue-mid-dark;

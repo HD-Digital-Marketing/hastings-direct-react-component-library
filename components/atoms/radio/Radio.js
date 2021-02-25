@@ -17,8 +17,8 @@ const Radio = props => {
         children
     } = props
 
-    const radioClass = classNames('a-checkbox a-radio', className, {
-        'a-checkbox--on-dark a-radio--on-dark': theme === 'dark'
+    const radioClass = classNames('a-radio', className, {
+        'a-radio--on-dark': theme === 'dark'
     })
 
     return (

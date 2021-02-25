@@ -23,7 +23,7 @@ const Checkbox = props => {
 
     return (
         <div className={checkboxClass}>
-            <input type="checkbox" id={id} name={name} value={value} defaultChecked={checked} disabled={disabled} readOnly={readOnly}/>
+            <input type="checkbox" {...{id, name, value, disabled, readOnly}} defaultChecked={checked} />
             <label htmlFor={name}>
                 {children}
             </label>

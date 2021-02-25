@@ -1,0 +1,68 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/fonts';
+@import '../checkbox/checkbox';
+
+.a-radio {
+	label {
+		&:before {
+			box-sizing: border-box;
+			border-radius: 50%;
+			pointer-events: none;
+			background-color: transparent;
+			width: 15px;
+			height: 15px;
+			transition: background-color 0.2s;
+		}
+
+		&:after {
+			content: '';
+			box-sizing: border-box;
+			position: absolute;
+			z-index: 1;
+			left: 1em;
+			top: 50%;
+			background-color: transparent;
+			width: 25px;
+			height: 25px;
+			transform: translateY(-50%);
+			border-radius: 50%;
+			pointer-events: none;
+			transition: background-color 0.2s;
+
+			// Brings the outside circle in line with the inner circle due to different sizes.
+			margin-left: -5px;
+		}
+	}
+
+	input[type=radio] {
+		&:checked {
+			& + label {
+				&:before {
+					background-image: none;
+					background-color: $color-brand-blue-mid-light;
+					border: none;
+				}
+
+				&:after {
+					border: 2px solid $color-brand-blue-mid-light;
+				}
+			}
+		}
+	}
+
+	&--on-dark {
+		input[type=radio] {
+			&:checked {
+				& + label {
+					&:before {
+						background-color: $color-white;
+					}
+
+					&:after {
+						border: 2px solid $color-white;
+					}
+				}
+			}
+		}
+	}
+}

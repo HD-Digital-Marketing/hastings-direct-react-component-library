@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the radio renders it should match the snapshot 1`] = `
+<div
+  className="a-checkbox a-radio"
+>
+  <input
+    defaultChecked={true}
+    disabled={false}
+    id="checkboxOne"
+    name="checkboxOne"
+    readOnly={false}
+    type="radio"
+  />
+  <label
+    htmlFor="checkboxOne"
+  >
+    Some value to choose
+  </label>
+</div>
+`;

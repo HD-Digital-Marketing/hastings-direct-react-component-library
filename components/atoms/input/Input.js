@@ -32,7 +32,7 @@ const Input = props => {
 
     let inlineCss = css({
         ':before': {
-            'background-image': `url(${icon ?? ''})`
+            'backgroundImage': `url(${icon ?? ''})`
         },
     })
 

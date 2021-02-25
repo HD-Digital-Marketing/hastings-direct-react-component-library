@@ -1,24 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Check the input renders it should match the snapshot 1`] = `
-<input
-  autoComplete="on"
-  autoFocus={false}
-  className="a-input"
-  defaultValue="123456789"
-  disabled={false}
-  id="someId"
-  length=""
-  max=""
-  maxLength=""
-  min=""
-  multiple={false}
-  name="someName"
-  placeholder="This is placeholder text"
-  readOnly={false}
-  required={false}
-  size=""
-  step=""
-  type="text"
-/>
+<div
+  className="a-input__wrap"
+  data-css-1ezj22c=""
+>
+  <input
+    autoComplete="on"
+    autoFocus={false}
+    className="a-input"
+    defaultValue="123456789"
+    disabled={false}
+    id="someId"
+    length=""
+    max=""
+    maxLength=""
+    min=""
+    multiple={false}
+    name="someName"
+    placeholder="This is placeholder text"
+    readOnly={false}
+    required={false}
+    size=""
+    step=""
+    type="text"
+  />
+</div>
 `;

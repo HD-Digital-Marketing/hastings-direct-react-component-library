@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the toggle renders it should match the snapshot 1`] = `
+<div
+  className="a-toggle a-toggle--on-dark"
+>
+  <label
+    className="a-toggle__label"
+    htmlFor="group"
+  >
+    <span
+      className="a-toggle__value"
+      data-css-1b74rh9=""
+    >
+      Annually
+    </span>
+    <span
+      className="a-toggle__slider-wrap"
+    >
+      <input
+        defaultChecked={false}
+        id="group"
+        name="group"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="a-toggle__slider"
+      />
+    </span>
+    <span
+      className="a-toggle__value"
+      data-css-1b74rh9=""
+    >
+      Monthly
+    </span>
+  </label>
+</div>
+`;

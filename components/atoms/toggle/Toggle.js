@@ -54,8 +54,7 @@ Toggle.propTypes = {
     id: PropTypes.string,
     nameLeft: PropTypes.string,
     nameRight: PropTypes.string,
-    checked: PropTypes.bool,
-    children: PropTypes.string,
+    checked: PropTypes.bool
 }
 
 export default Toggle

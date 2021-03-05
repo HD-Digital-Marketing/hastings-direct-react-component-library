@@ -1,0 +1,61 @@
+@mixin create-col-classes($breakpoint, $grid-cols, $size) {
+
+	$modifier: '';
+
+	@if $size == 480px {
+		$modifier: '-xs';
+	} @else if $size == 576px {
+		$modifier: '-sm';
+	} @else if $size == 768px {
+		$modifier: '-md';
+	} @else if $size == 992px {
+		$modifier: '-lg';
+	} @else if $size == 1250px {
+		$modifier: '-xl';
+	}
+
+	@if $modifier != '' {
+
+		@include breakpoint($breakpoint, 'min') {
+
+			.g-col#{$modifier}-offset-0 {
+				margin-left: 0;
+			}
+
+			@for $i from 1 through $grid-cols {
+
+				.g-col#{$modifier}-#{$i} {
+
+					width: (100 / ($grid-cols / $i) ) * 1%;
+					padding: 1em;
+					float: none;
+				}
+
+				.g-col#{$modifier}-offset-#{$i} {
+					margin-left: (100 / ($grid-cols / $i) ) * 1%;
+				}
+			}
+		}
+
+		@include breakpoint($breakpoint, 'max') {
+
+			.g-col#{$modifier}-max-offset-0 {
+				margin-left: 0;
+			}
+
+			@for $i from 1 through $grid-cols {
+
+				.g-col#{$modifier}-max-#{$i} {
+
+					width: (100 / ($grid-cols / $i) ) * 1%;
+					padding: 1em;
+					float: none;
+				}
+
+				.g-col#{$modifier}-max-offset-#{$i} {
+					margin-left: (100 / ($grid-cols / $i) ) * 1%;
+				}
+			}
+		}
+	}
+}

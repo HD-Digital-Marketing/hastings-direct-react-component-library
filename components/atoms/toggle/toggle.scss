@@ -3,6 +3,8 @@
 
 .a-toggle {
 
+	display: inline-block;
+
 	input[type=checkbox] {
 		position: absolute;
 		z-index: 1;

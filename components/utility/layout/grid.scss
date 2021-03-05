@@ -1,0 +1,66 @@
+@import '../../../src/scss/placholders/clearfix';
+@import '../../../src/scss/maps/breakpoints';
+@import '../../../src/scss/mixins/breakpoint-mixin';
+@import '../../../src/scss/mixins/column-mixin';
+@import '../../../src/scss/global/sizing';
+@import '../../../src/scss/variables/grid-size';
+
+.g-container {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding: 0 0.5em;
+
+	@include breakpoint(small, min) {
+		max-width: $grid-size-small;
+	}
+
+	@include breakpoint(medium, min) {
+		max-width: $grid-size-medium;
+		padding: 0 1em;
+	}
+
+	@include breakpoint(large, min) {
+		max-width: $grid-size-large;
+	}
+
+	&--fluid {
+		max-width: 100%;
+	}
+}
+
+.g-row {
+	@extend %clearfix;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -1em;
+	margin-right: -1em;
+
+	// Nested rows with flex do not calculate the height correctly. This fixes that.
+	.g-row {
+		height: auto;
+	}
+
+	&--align-items-center {
+		align-items: center;
+	}
+
+	&--justify-content-center {
+		justify-content: center;
+	}
+}
+
+// This is a fallback for any column. It allows for columns to fully expand when not under a breakpoint.
+[class*='g-col-'] {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 1px;
+	padding: 1em;
+}
+
+// Create the column classes
+@each $modifier, $breakpoints in $breakpoints {
+	@include create-col-classes($modifier, 12, $breakpoints);
+}

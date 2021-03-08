@@ -12,7 +12,7 @@ const Container = props => {
     } = props
 
     const containerClass = classNames('g-container', className, {
-        'g-container--fluid': fluid,
+        'g-container--fluid': fluid
     })
 
     return(

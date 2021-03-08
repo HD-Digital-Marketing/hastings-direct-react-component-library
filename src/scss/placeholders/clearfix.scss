@@ -1,0 +1,11 @@
+%clearfix {
+	&:before,
+	&:after {
+		display: block;
+		content: " ";
+	}
+
+	&:after {
+		clear: both;
+	}
+}

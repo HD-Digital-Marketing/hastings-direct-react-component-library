@@ -1,0 +1,20 @@
+@mixin breakpoint($breakpoint, $direction) {
+
+	// Get the breakpoint value from the $breakpoints map
+	$breakpoint-value: map-get($breakpoints, $breakpoint);
+
+	// Example: @include breakpoint(small, max) { }
+	// -1 is key to avoiding conflicting code at 1240px wide
+	@if $direction == max {
+		@media screen and (max-width: ($breakpoint-value - 1)) {
+			@content;
+		}
+	}
+
+	// Example: @include breakpoint(small, min) { }
+	@if $direction == min {
+		@media screen and (min-width: $breakpoint-value) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the grid renders it should match the snapshot 1`] = `
+<div
+  className="g-container g-container--fluid"
+>
+  <div
+    className="g-row"
+  >
+    <div
+      className="g-col-xs-12 g-col-sm-10 g-col-md-8 g-col-lg-6 g-col-xl-4 "
+    >
+      This is a column
+    </div>
+  </div>
+</div>
+`;

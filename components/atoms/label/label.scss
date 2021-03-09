@@ -1,0 +1,13 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/type';
+
+.a-label {
+	display: inline-block;
+	padding: 1em 0;
+	font-size: 1.125rem;
+	color: $color-brand-blue-prussian;
+
+	&--on-dark {
+		color: $color-white
+	}
+}

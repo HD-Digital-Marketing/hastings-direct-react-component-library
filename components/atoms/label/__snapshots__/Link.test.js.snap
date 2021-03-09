@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the label renders it should match the snapshot 1`] = `
+<label
+  className="a-label a-label--on-dark"
+  htmlFor="anInputId"
+>
+  This is a label
+</label>
+`;

@@ -1,10 +1,10 @@
-import React from 'react';
-import {render} from 'react-dom';
-import Container from '../components/utility/layout/Container';
+import React from 'react'
+import {render} from 'react-dom'
+import Container from '../components/utility/layout/Container'
 import Row from '../components/utility/layout/Row'
-import Column from '../components/utility/layout/Column';
-import Icon from "../components/atoms/icon/Icon";
-import carIcon from "../src/img/icons/car.svg";
+import Column from '../components/utility/layout/Column'
+import Icon from '../components/atoms/icon/Icon'
+import carIcon from '../src/img/icons/car.svg'
 
 const Playground = () => {
 
@@ -17,7 +17,7 @@ const Playground = () => {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center'
-    };
+    }
 
     return (
         <>
@@ -46,4 +46,4 @@ const Playground = () => {
 render(
     <Playground />,
     document.getElementById('root')
-);
+)

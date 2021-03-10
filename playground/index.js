@@ -3,6 +3,8 @@ import {render} from 'react-dom';
 import Container from '../components/utility/layout/Container';
 import Row from '../components/utility/layout/Row'
 import Column from '../components/utility/layout/Column';
+import Icon from "../components/atoms/icon/Icon";
+import carIcon from "../src/img/icons/car.svg";
 
 const Playground = () => {
 
@@ -21,19 +23,17 @@ const Playground = () => {
         <>
             <div className="playground-container">
                 <div className="playground-container__item">
-                    <Container fluid={true}>
-                        <h1>Container fluid</h1>
-                        <Row>
-                            <Column xs={8} md={6} xl={4} offset={{xs: 0, md: 3, xl: 4}}>
-                                <div style={divStyle}>Column</div>
-                            </Column>
-                        </Row>
-                    </Container>
                     <Container>
-                        <h1>Container boxed</h1>
                         <Row>
-                            <Column xs={12} md={6} xl={4} offset={{md: 3, xl: 4}}>
-                                <div style={divStyle}>Column</div>
+                            <Column xs={12}>
+                                <Icon svgImage={carIcon} svgWidth={15} svgHeight={15} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
+                                <Icon svgImage={carIcon} svgWidth={20} svgHeight={20} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
+                                <Icon svgImage={carIcon} svgWidth={25} svgHeight={25} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
+                                <Icon svgImage={carIcon} svgWidth={30} svgHeight={30} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
+                                <Icon svgImage={carIcon} svgWidth={15} svgHeight={15} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
+                                <Icon svgImage={carIcon} svgWidth={20} svgHeight={20} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
+                                <Icon svgImage={carIcon} svgWidth={25} svgHeight={25} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
+                                <Icon svgImage={carIcon} svgWidth={30} svgHeight={30} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
                             </Column>
                         </Row>
                     </Container>

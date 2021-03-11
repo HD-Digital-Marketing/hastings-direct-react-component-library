@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the icon renders it should match the snapshot 1`] = `
+<span
+  className="a-icon a-icon--rounded"
+  style={
+    Object {
+      "backgroundColor": "#0085ff",
+      "borderColor": undefined,
+      "height": 39,
+      "width": 39,
+    }
+  }
+/>
+`;

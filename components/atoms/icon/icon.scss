@@ -1,0 +1,22 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/sizing';
+@import '../../../src/scss/global/type';
+
+.a-icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 2px solid transparent;
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
+	&--rounded {
+		border-radius: 50%;
+	}
+}

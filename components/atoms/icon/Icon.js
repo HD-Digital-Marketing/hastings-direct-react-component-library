@@ -20,8 +20,9 @@ const Icon = props => {
     const svgParentInlineStyle = {
         backgroundColor: svgBackgroundColor,
         borderColor: svgBorderColor,
-        width: svgWidth + (isRound ? svgWidth/100*30 : svgWidth/100*15),
-        height: svgHeight + (isRound ? svgHeight/100*30 : svgHeight/100*15)
+        borderWidth: svgWidth/100*10,
+        width: svgBackgroundColor || svgBorderColor ? svgWidth + svgWidth : svgWidth,
+        height: svgBackgroundColor || svgBorderColor ? svgHeight + svgHeight : svgHeight
     }
 
     const svgInlineStyle = {

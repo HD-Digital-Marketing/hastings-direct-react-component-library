@@ -8,7 +8,6 @@ const Icon = props => {
 
     const {
         isRound = false,
-        isSquare = false,
         svgImage,
         svgWidth,
         svgHeight,
@@ -30,8 +29,7 @@ const Icon = props => {
     }
 
     const iconClass = classNames('a-icon', className, {
-        'a-icon--rounded': isRound,
-        'a-icon--squared': isSquare
+        'a-icon--rounded': isRound
     })
 
     return(
@@ -43,15 +41,13 @@ const Icon = props => {
 
 Icon.propTypes = {
     isRound: PropTypes.bool,
-    isSquare: PropTypes.bool,
     svgImage: PropTypes.string,
     svgWidth: PropTypes.number,
     svgHeight: PropTypes.number,
     svgFill: PropTypes.string,
     svgBackgroundColor: PropTypes.string,
     svgBorderColor: PropTypes.string,
-    className: PropTypes.string,
-    children: PropTypes.string
+    className: PropTypes.string
 }
 
 export default Icon

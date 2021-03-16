@@ -1,0 +1,76 @@
+@import '../../../src/scss/variables/variables';
+
+.m-panel {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	margin: 0 auto;
+	background-color: $color-white;
+	color: $color-brand-blue-dark;
+	border-radius: 6px;
+	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.05);
+
+	&--dark {
+		background-color: $color-brand-blue-prussian;
+		color: $color-white;
+	}
+
+	&--curve-pattern {
+		position: relative;
+		z-index: 0;
+		background-color: $color-brand-blue-mid-light;
+		color: $color-white;
+
+		&:before,
+		&:after {
+			content: '';
+			z-index: -1;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-size: 300px;
+			background-repeat: no-repeat;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+			background-image: url('../../../src/img/panel-top-left.svg');
+			background-position: 10% 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+			background-image: url('../../../src/img/panel-bottom-right.svg');
+			background-position: 100% 100%;
+		}
+	}
+
+	&--centered-content {
+		text-align: center;
+	}
+
+	&__header {
+		&--centered-content {
+			text-align: center;
+		}
+	}
+
+	&__body {
+		&--centered-content {
+			text-align: center;
+		}
+	}
+
+	&__footer {
+		margin-top: auto;
+		padding-top: 1em;
+
+		&--centered-content {
+			text-align: center;
+		}
+	}
+}

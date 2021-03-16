@@ -1,0 +1,21 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/type';
+
+.a-identifier {
+	background-color: $color-white;
+	padding: 0.21em 0.25em 0.01em 0.25em;
+	color: $color-brand-blue-dark;
+	font-size: 1.5625rem;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&--reg {
+		font-family: "Charles Wright", "Helvetica Neue", BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		background-color: $color-brand-reg;
+		padding: 0.05em 0.25em;
+	}
+
+	&--small {
+		font-size: 1.125rem;
+	}
+}

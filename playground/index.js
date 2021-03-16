@@ -5,6 +5,7 @@ import Row from '../components/utility/layout/Row'
 import Column from '../components/utility/layout/Column'
 import Icon from '../components/atoms/icon/Icon'
 import carIcon from '../src/img/icons/car.svg'
+import PolicyProgress from '../components/atoms/policy progress/PolicyProgress'
 
 const Playground = () => {
 
@@ -26,14 +27,27 @@ const Playground = () => {
                     <Container>
                         <Row>
                             <Column xs={12}>
-                                <Icon svgImage={carIcon} svgWidth={15} svgHeight={15} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
-                                <Icon svgImage={carIcon} svgWidth={20} svgHeight={20} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
-                                <Icon svgImage={carIcon} svgWidth={25} svgHeight={25} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
-                                <Icon svgImage={carIcon} svgWidth={30} svgHeight={30} svgFill="white" svgBackgroundColor="#0085ff" isRound={true}/>
-                                <Icon svgImage={carIcon} svgWidth={15} svgHeight={15} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
-                                <Icon svgImage={carIcon} svgWidth={20} svgHeight={20} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
-                                <Icon svgImage={carIcon} svgWidth={25} svgHeight={25} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
-                                <Icon svgImage={carIcon} svgWidth={30} svgHeight={30} svgFill="white" svgBackgroundColor="#0085ff" isSquare={true}/>
+                                <PolicyProgress progress={70} startDate="07 03 2020" endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress progress={111} startDate="07 03 2020" endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress expired={true} endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress cancelled={true} endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress willStart={true} startDate="07 03 2020"/>
                             </Column>
                         </Row>
                     </Container>

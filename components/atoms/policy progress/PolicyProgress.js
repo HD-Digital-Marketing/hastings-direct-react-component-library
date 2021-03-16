@@ -39,7 +39,7 @@ const PolicyProgress = props => {
     } else if (willStart) {
         progressContent = <div className="a-policy-progress__note">This policy will start on {startDate}</div>
     } else {
-        progressContent = <div className="a-policy-progress__note"><span className="a-policy-progress__start">{startDate}</span><span className="a-policy-progress__end">{startDate}</span></div>
+        progressContent = <div className="a-policy-progress__note"><span className="a-policy-progress__start">{startDate}</span><span className="a-policy-progress__end">{endDate}</span></div>
     }
 
     return(

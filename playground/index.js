@@ -27,6 +27,35 @@ const Playground = () => {
                     <Container>
                         <Row>
                             <Column xs={12}>
+                                <PolicyProgress theme="dark" progress={70} startDate="07 03 2020" endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress theme="dark" progress={111} startDate="07 03 2020" endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress theme="dark" expired={true} endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress theme="dark" cancelled={true} endDate="08 03 2021"/>
+                            </Column>
+                        </Row>
+                        <Row>
+                            <Column xs={12}>
+                                <PolicyProgress theme="dark" willStart={true} startDate="07 03 2020"/>
+                            </Column>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="playground-container__item">
+                    <Container>
+                        <Row>
+                            <Column xs={12}>
                                 <PolicyProgress progress={70} startDate="07 03 2020" endDate="08 03 2021"/>
                             </Column>
                         </Row>

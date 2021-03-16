@@ -12,10 +12,12 @@ const PolicyProgress = props => {
         expired = false,
         cancelled = false,
         willStart = false,
-        className = ''
+        className = '',
+        theme = ''
     } = props
 
     const progressPolicyClass = classNames('a-policy-progress', className, {
+        'a-policy-progress--dark': theme === 'dark',
         'a-policy-progress--error': expired || cancelled
     })
 
@@ -55,7 +57,8 @@ PolicyProgress.propTypes = {
     expired: PropTypes.bool,
     cancelled: PropTypes.bool,
     willStart: PropTypes.bool,
-    className: PropTypes.string
+    className: PropTypes.string,
+    theme: PropTypes.string
 }
 
 export default PolicyProgress

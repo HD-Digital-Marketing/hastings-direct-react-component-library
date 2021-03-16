@@ -3,6 +3,8 @@
 
 .a-policy-progress {
 
+	color: $color-brand-blue-dark;
+
 	&__bar {
 		width: 100%;
 		height: 5px;
@@ -48,6 +50,10 @@
 
 	&__end {
 		float: right;
+	}
+
+	&--dark {
+		color: $color-white;
 	}
 
 	&--error {

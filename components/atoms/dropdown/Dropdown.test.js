@@ -11,7 +11,7 @@ describe('Check the dropdown renders', () => {
             'Bike policy',
             'Home policy',
             'Multicar policy',
-            'YouDrive policy',
+            'YouDrive policy'
         ]
 
         const tree = renderer

@@ -10,7 +10,7 @@ const PanelFooter = props => {
         children
     } = props
 
-    const panelFooterClass = classNames('m-panel__footer', className, className, {
+    const panelFooterClass = classNames('m-panel__footer', className, {
         'm-panel__footer--centered-content': centerContent
     })
 

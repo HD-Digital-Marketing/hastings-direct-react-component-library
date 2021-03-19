@@ -10,7 +10,7 @@ const PanelBody = props => {
         children
     } = props
 
-    const panelBodyClass = classNames('m-panel__body', className, className, {
+    const panelBodyClass = classNames('m-panel__body', className, {
         'm-panel__body--centered-content': centerContent
     })
 

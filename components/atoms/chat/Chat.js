@@ -25,6 +25,7 @@ const Chat = props => {
 }
 
 Chat.propTypes = {
+    isSmall: PropTypes.bool,
     className: PropTypes.string,
     children: PropTypes.string
 }

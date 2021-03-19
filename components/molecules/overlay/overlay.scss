@@ -1,0 +1,51 @@
+@import '../../../src/scss/variables/variables';
+
+.m-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: $color-white;
+	height: 100%;
+	max-width: 768px;
+	padding: 4em 8em;
+	transform: translateX(100%);
+	transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+
+	&__background {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color-black, 0.75);
+		transition: opacity 0.3s;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 2em;
+		right: 2em;
+	}
+
+	&__wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+
+		&--show {
+
+			.m-overlay {
+				transform: translateX(0);
+				&__background {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

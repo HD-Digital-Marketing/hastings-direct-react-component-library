@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the chat renders it should match the snapshot 1`] = `
+<div
+  className="a-chat a-chat--small"
+>
+  <span
+    className="a-chat__label"
+  >
+    Chat
+  </span>
+   
+  <span
+    className="a-icon"
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "borderColor": undefined,
+        "borderWidth": 2.5,
+        "height": 25,
+        "width": 25,
+      }
+    }
+  />
+</div>
+`;

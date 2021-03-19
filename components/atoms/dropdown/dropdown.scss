@@ -1,0 +1,52 @@
+@import '../../../src/scss/variables/variables';
+
+.a-dropdown {
+
+	&__select {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 1em;
+		font-size: 1.125rem;
+		background-color: $color-white;
+		border: 2px solid $color-brand-blue-grey-light;
+		color: $color-brand-blue-dark;
+		border-radius: 6px;
+		outline: 0;
+
+		&:active,
+		&:focus {
+			border: 2px solid $color-brand-blue-light;
+		}
+	}
+
+	&--dark {
+
+		.a-dropdown__select {
+			background-color: $color-brand-blue-prussian;
+			border: 2px solid $color-brand-blue-grey-mid;
+			color: $color-white;
+		}
+
+		.a-dropdown__icon {
+			fill: $color-white;
+		}
+	}
+
+	&__wrap {
+		position: relative;
+	}
+
+	&__icon {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		right: 1em;
+		transform: translateY(-50%);
+		pointer-events: none;
+		fill: $color-brand-blue-grey-mid;
+	}
+}

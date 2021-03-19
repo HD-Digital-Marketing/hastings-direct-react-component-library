@@ -53,13 +53,9 @@
 		text-align: center;
 	}
 
-	&__header {
-		&--centered-content {
-			text-align: center;
-		}
-	}
-
-	&__body {
+	&__header,
+	&__body,
+	&__footer {
 		&--centered-content {
 			text-align: center;
 		}
@@ -68,9 +64,5 @@
 	&__footer {
 		margin-top: auto;
 		padding-top: 1em;
-
-		&--centered-content {
-			text-align: center;
-		}
 	}
 }

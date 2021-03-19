@@ -42,7 +42,7 @@ const Overlay = (props) => {
                                     className="m-overlay__icon"
                                     data-dismiss="modal"
                                     aria-label="Close"
-                                    onClick={toggleOverlay}/>
+                                    onClick={toggleOverlay} />
                             </div>
                         </div>
                         <div className="m-overlay__content">

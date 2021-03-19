@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the dropdown renders it should match the snapshot 1`] = `
+<div
+  className="a-dropdown a-dropdown--dark"
+>
+  <label
+    className="a-label a-label--on-dark"
+    htmlFor="choosePolicy"
+  >
+    Please choose your policy
+  </label>
+  <div
+    className="a-dropdown__wrap"
+  >
+    <span
+      className="a-icon a-dropdown__icon"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderWidth": 1.5,
+          "height": 15,
+          "width": 15,
+        }
+      }
+    />
+    <select
+      className="a-dropdown__select"
+      name="choosePolicy"
+    >
+      <option
+        value="Car policy"
+      >
+        Car policy
+      </option>
+      <option
+        value="Van policy"
+      >
+        Van policy
+      </option>
+      <option
+        value="Bike policy"
+      >
+        Bike policy
+      </option>
+      <option
+        value="Home policy"
+      >
+        Home policy
+      </option>
+      <option
+        value="Multicar policy"
+      >
+        Multicar policy
+      </option>
+      <option
+        value="YouDrive policy"
+      >
+        YouDrive policy
+      </option>
+    </select>
+  </div>
+</div>
+`;

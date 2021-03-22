@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the progress bar renders it should match the snapshot 1`] = `
+<div
+  className="a-policy-progress"
+>
+  <progress
+    className="a-policy-progress__bar"
+    max="120"
+    value={70}
+  >
+    70
+  </progress>
+  <div
+    className="a-policy-progress__note"
+  >
+    <span
+      className="a-policy-progress__start"
+    >
+      07 03 2020
+    </span>
+    <span
+      className="a-policy-progress__end"
+    >
+      07 03 2020
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,80 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/placeholders/clearfix';
+
+.a-policy-progress {
+
+	color: $color-brand-blue-grey-mid;
+
+	&__bar {
+		width: 100%;
+		height: 5px;
+		border-radius: 5px;
+		border: 0;
+
+		&::-webkit-progress-bar {
+			background-color: $color-brand-blue-pale-azure;
+			height: 5px;
+			border-radius: 5px;
+		}
+
+		&::-webkit-progress-value {
+			background-color: $color-brand-seaweed;
+			height: 5px;
+			border-radius: 5px;
+		}
+
+		&::-moz-progress-bar {
+			background-color: $color-brand-seaweed;
+			height: 5px;
+			border-radius: 5px;
+		}
+
+		&[value^="11"]:not([value="11"])::-webkit-progress-value {
+			background-color: $color-brand-crab;
+		}
+
+		&[value^="11"]:not([value="11"])::-moz-progress-bar{
+			background-color: $color-brand-crab;
+		}
+	}
+
+	&__note {
+		@extend %clearfix;
+		font-size: 0.75rem;
+		text-align: center;
+	}
+
+	&__start {
+		float: left;
+	}
+
+	&__end {
+		float: right;
+	}
+
+	&--dark {
+		color: $color-white;
+	}
+
+	&--error {
+
+		.a-policy-progress__bar {
+
+			&::-webkit-progress-value {
+				background-color: $color-brand-red;
+			}
+
+			&::-moz-progress-bar {
+				background-color: $color-brand-red;
+			}
+
+			&[value^="11"]:not([value="11"])::-webkit-progress-value {
+				background-color: $color-brand-red;
+			}
+
+			&[value^="11"]:not([value="11"])::-moz-progress-bar{
+				background-color: $color-brand-red;
+			}
+		}
+	}
+}

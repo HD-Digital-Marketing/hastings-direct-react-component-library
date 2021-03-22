@@ -14,7 +14,8 @@ const Icon = props => {
         svgFill,
         svgBackgroundColor,
         svgBorderColor,
-        className = ''
+        className = '',
+        onClick
     } = props
 
     const svgParentInlineStyle = {
@@ -34,7 +35,7 @@ const Icon = props => {
     })
 
     return(
-        <span className={iconClass} style={svgParentInlineStyle}>
+        <span className={iconClass} style={svgParentInlineStyle} {...{onClick}}>
             <SVG src={svgImage} width={svgWidth} height={svgHeight} style={svgInlineStyle} />
         </span>
     )

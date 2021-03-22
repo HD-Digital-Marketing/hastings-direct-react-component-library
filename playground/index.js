@@ -5,7 +5,7 @@ import Row from '../components/utility/layout/Row'
 import Column from '../components/utility/layout/Column'
 import Icon from '../components/atoms/icon/Icon'
 import carIcon from '../src/img/icons/car.svg'
-import PolicyProgress from '../components/atoms/policy progress/PolicyProgress'
+import Chat from '../components/atoms/chat/Chat'
 
 const Playground = () => {
 
@@ -27,56 +27,12 @@ const Playground = () => {
                     <Container>
                         <Row>
                             <Column xs={12}>
-                                <PolicyProgress theme="dark" progress={70} startDate="7th March 2020" endDate="8th March 2021"/>
+                                <Chat>Chat</Chat>
                             </Column>
                         </Row>
                         <Row>
                             <Column xs={12}>
-                                <PolicyProgress theme="dark" progress={111} startDate="7th March 2020" endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress theme="dark" expired={true} endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress theme="dark" cancelled={true} endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress theme="dark" willStart={true} startDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                    </Container>
-                </div>
-                <div className="playground-container__item">
-                    <Container>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress progress={70} startDate="7th March 2020" endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress progress={111} startDate="7th March 2020" endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress expired={true} endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress cancelled={true} endDate="8th March 2021"/>
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column xs={12}>
-                                <PolicyProgress willStart={true} startDate="8th March 2021"/>
+                                <Chat isSmall={true}>Chat</Chat>
                             </Column>
                         </Row>
                     </Container>

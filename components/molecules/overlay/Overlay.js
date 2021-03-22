@@ -10,18 +10,13 @@ const Overlay = (props) => {
 
     const {
         isOpen = false,
+        toggleOverlay,
         className,
         children
     } = props
 
-    const [isShowing, setIsShowing] = useState(isOpen)
-
-    const toggleOverlay = () => {
-        setIsShowing(!isShowing)
-    }
-
     const overlayClass = classNames('m-overlay__wrap', className, {
-        'm-overlay__wrap--show': isShowing
+        'm-overlay__wrap--show': isOpen
     })
 
     return ReactDOM.createPortal(
@@ -57,6 +52,7 @@ const Overlay = (props) => {
 
 Overlay.propTypes = {
     isOpen: PropTypes.bool,
+    toggleOverlay: PropTypes.func,
     className: PropTypes.string,
     children: PropTypes.node
 }

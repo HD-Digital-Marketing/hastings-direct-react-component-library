@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import renderer from 'react-test-renderer'
-import Overlay from './Overlay'
+import Drawer from './Drawer'
 
-describe('Check the overlay renders', () => {
+describe('Check the drawer renders', () => {
 
     beforeAll(() => {
         ReactDOM.createPortal = jest.fn((element, node) => {
@@ -19,7 +19,7 @@ describe('Check the overlay renders', () => {
 
         const tree = renderer
             .create(
-                <Overlay isOpen={true}>Overlay content</Overlay>
+                <Drawer isOpen={true}>Overlay content</Drawer>
             )
             .toJSON()
         expect(tree).toMatchSnapshot()

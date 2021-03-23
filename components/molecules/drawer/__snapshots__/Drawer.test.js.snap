@@ -1,26 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check the overlay renders it should match the snapshot 1`] = `
+exports[`Check the drawer renders it should match the snapshot 1`] = `
 <div
-  className="m-overlay__wrap m-overlay__wrap--show"
+  className="m-drawer__wrap m-drawer__wrap--show"
 >
   <div
-    className="m-overlay__background"
-    onClick={[Function]}
+    className="m-drawer__background"
   />
   <div
-    className="m-overlay"
+    className="m-drawer"
   >
     <div
-      className="m-overlay__container"
+      className="m-drawer__container"
     >
       <div
-        className="m-overlay__header"
+        className="m-drawer__header"
       >
         <div>
           <span
-            className="a-icon m-overlay__icon a-icon--rounded"
-            onClick={[Function]}
+            className="a-icon m-drawer__icon a-icon--rounded"
             style={
               Object {
                 "backgroundColor": undefined,
@@ -34,7 +32,7 @@ exports[`Check the overlay renders it should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="m-overlay__content"
+        className="m-drawer__content"
       >
         Overlay content
       </div>

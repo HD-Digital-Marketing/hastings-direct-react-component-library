@@ -22,7 +22,7 @@ exports[`Check the progress bar renders it should match the snapshot 1`] = `
     <span
       className="a-policy-progress__end"
     >
-      07 03 2020
+      08 03 2021
     </span>
   </div>
 </div>

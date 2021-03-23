@@ -1,31 +1,31 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import Icon from '../../atoms/icon/Icon'
 import classNames from 'classnames'
-import './overlay.scss'
+import './drawer.scss'
 import CloseIcon from '../../../src/img/icons/cross.svg'
 
-const Overlay = (props) => {
+const Drawer = (props) => {
 
     const {
         isOpen = false,
-        toggleOverlay,
+        toggleDrawer,
         className,
         children
     } = props
 
-    const overlayClass = classNames('m-overlay__wrap', className, {
-        'm-overlay__wrap--show': isOpen
+    const drawerClass = classNames('m-drawer__wrap', className, {
+        'm-drawer__wrap--show': isOpen
     })
 
     return ReactDOM.createPortal(
         <>
-            <div className={overlayClass}>
-                <div className="m-overlay__background" onClick={toggleOverlay} />
-                <div className="m-overlay">
-                    <div className="m-overlay__container">
-                        <div className="m-overlay__header">
+            <div className={drawerClass}>
+                <div className="m-drawer__background" onClick={toggleDrawer} />
+                <div className="m-drawer">
+                    <div className="m-drawer__container">
+                        <div className="m-drawer__header">
                             <div>
                                 <Icon
                                     svgImage={CloseIcon}
@@ -34,13 +34,13 @@ const Overlay = (props) => {
                                     isRound={true}
                                     svgFill="#011831"
                                     svgBorderColor="#60759e"
-                                    className="m-overlay__icon"
+                                    className="m-drawer__icon"
                                     data-dismiss="modal"
                                     aria-label="Close"
-                                    onClick={toggleOverlay} />
+                                    onClick={toggleDrawer} />
                             </div>
                         </div>
-                        <div className="m-overlay__content">
+                        <div className="m-drawer__content">
                             {children}
                         </div>
                     </div>
@@ -50,11 +50,11 @@ const Overlay = (props) => {
     )
 }
 
-Overlay.propTypes = {
+Drawer.propTypes = {
     isOpen: PropTypes.bool,
-    toggleOverlay: PropTypes.func,
+    toggleDrawer: PropTypes.func,
     className: PropTypes.string,
     children: PropTypes.node
 }
 
-export default Overlay
+export default Drawer

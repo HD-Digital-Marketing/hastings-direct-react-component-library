@@ -1,6 +1,6 @@
 @import '../../../src/scss/variables/variables';
 
-.m-overlay {
+.m-drawer {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -41,7 +41,7 @@
 
 		&--show {
 			pointer-events: auto;
-			.m-overlay {
+			.m-drawer {
 				transform: translateX(0);
 				&__background {
 					visibility: visible;

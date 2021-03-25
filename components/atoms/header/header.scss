@@ -34,4 +34,36 @@
 			}
 		}
 	}
+
+	&--reg,
+	&--postcode {
+		display: inline-block;
+		padding: 0.2em;
+		text-transform: uppercase;
+		border-radius: 2px;
+	}
+
+	&--reg {
+		font-family: "Charles Wright", "Helvetica Neue", BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		background-color: $color-brand-reg;
+	}
+
+	&--postcode {
+		background-color: $color-white;
+	}
+
+	&--special {
+		display: inline-block;
+		color: $color-white;
+		margin: 0;
+		padding: 0.2em 0.4em;
+
+		&.a-header--primary {
+			background-color: $color-brand-blue-mid-light;
+		}
+
+		&.a-header--secondary {
+			background-color: $color-brand-purple;
+		}
+	}
 }

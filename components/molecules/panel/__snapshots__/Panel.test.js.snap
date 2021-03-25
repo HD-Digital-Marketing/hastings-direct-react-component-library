@@ -7,11 +7,11 @@ exports[`Check the panel renders it should match the snapshot 1`] = `
   <div
     className="m-panel__header"
   >
-    <h2
+    <h1
       className="a-header"
     >
       This is a panel title with centered content
-    </h2>
+    </h1>
   </div>
   <div
     className="m-panel__body"

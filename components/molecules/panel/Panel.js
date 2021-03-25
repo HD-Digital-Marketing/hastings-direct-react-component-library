@@ -8,6 +8,7 @@ const Panel = props => {
     const {
         theme = '',
         centerContent = false,
+        panelPadding = true,
         className = '',
         children
     } = props
@@ -15,7 +16,8 @@ const Panel = props => {
     const panelClass = classNames('m-panel', className, {
         'm-panel--dark': theme === 'dark',
         'm-panel--curve-pattern': theme === 'pattern',
-        'm-panel--centered-content': centerContent
+        'm-panel--centered-content': centerContent,
+        'm-panel--no-padding': !panelPadding
     })
 
     return(
@@ -25,6 +27,8 @@ const Panel = props => {
 
 Panel.propTypes = {
     theme: PropTypes.string,
+    centerContent: PropTypes.bool,
+    panelPadding: PropTypes.bool,
     className: PropTypes.string,
     children: PropTypes.node
 }

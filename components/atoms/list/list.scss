@@ -1,0 +1,108 @@
+@import '../../../src/scss/variables/variables';
+@import '../../../src/scss/global/type';
+
+.a-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+	color: $color-brand-blue-dark;
+
+	li {
+		margin-bottom: 1em;
+		&:before {
+			content: "\2022";
+			font-weight: bold;
+			display: inline-block;
+			margin-right: 0.5em;
+			color: $color-brand-blue-dark;
+		}
+	}
+
+	&--bold {
+		font-weight: bold;
+	}
+
+	&--dark {
+		color: $color-white;
+
+		li {
+			&:before {
+				color: $color-white;
+			}
+		}
+	}
+
+	&--primary {
+		li {
+			&:before {
+				color: $color-brand-blue-mid-light;
+			}
+		}
+
+		&-on-dark {
+			color: $color-white;
+		}
+	}
+
+	&--secondary {
+		li {
+			&:before {
+				color: $color-brand-red;
+			}
+		}
+
+		&-on-dark {
+			color: $color-white;
+		}
+	}
+
+	&--numbered {
+		counter-reset: item;
+
+		li {
+			&:before {
+				content: counters(item, ".") ".";
+				counter-increment: item;
+				font-weight: normal;
+			}
+		}
+	}
+
+	&--tick {
+		li {
+			&:before {
+				content: '';
+				background-size: 100%;
+				width: 1.25em;
+				height: 1.25em;
+				vertical-align: text-bottom;
+				margin-right: 1em;
+			}
+		}
+
+		&-primary {
+			li {
+				&:before {
+					background-image: url('../../../src/img/Icons_Tick.svg');
+				}
+			}
+
+			&-on-dark {
+				color: $color-white;
+			}
+		}
+
+		&-secondary {
+			li {
+				&:before {
+					content: url('../../../src/img/Icons_Tick_Secondary.svg');
+				}
+			}
+
+			&-on-dark {
+				color: $color-white;
+			}
+		}
+	}
+}

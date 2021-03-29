@@ -1,17 +1,21 @@
-import React from 'react';
-import './header.scss';
-import classNames from 'classnames';
+import React from 'react'
+import './header.scss'
+import classNames from 'classnames'
+import PropTypes from 'prop-types'
 
 const Header = props => {
 
     const {
         children,
-        headerType = 'h1',
+        headerSize = 'h1',
+        isReg = false,
+        isPostcode = false,
+        isSpecial = false,
         className = '',
         theme
-    } = props;
+    } = props
 
-    let header = '';
+    let header = ''
 
     let headerClass = classNames('a-header', className, {
         'a-header--primary': theme === 'primary',
@@ -22,10 +26,12 @@ const Header = props => {
         'a-header--secondary-xl': theme === 'secondary-xl',
         'a-header--secondary-on-dark': theme === 'secondary-dark',
         'a-header--secondary-on-dark-xl': theme === 'secondary-dark-xl',
+        'a-header--reg': isReg,
+        'a-header--postcode': isPostcode,
+        'a-header--special': isSpecial
+    })
 
-    });
-
-    switch (headerType) {
+    switch (headerSize) {
         case 'h1':
             header = <h1 className={headerClass}>{children}</h1>
             break;
@@ -54,4 +60,14 @@ const Header = props => {
 
 }
 
-export default Header;
+Header.propTypes = {
+    children: PropTypes.node,
+    headerSize: PropTypes.string,
+    isReg: PropTypes.bool,
+    isPostcode: PropTypes.bool,
+    isSpecial: PropTypes.bool,
+    className: PropTypes.string,
+    theme: PropTypes.string
+}
+
+export default Header

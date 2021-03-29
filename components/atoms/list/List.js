@@ -55,6 +55,7 @@ const List = props => {
 List.propTypes = {
     listItems: PropTypes.array,
     listType: PropTypes.string,
+    isBold: PropTypes.bool,
     theme: PropTypes.string,
     className: PropTypes.string
 }

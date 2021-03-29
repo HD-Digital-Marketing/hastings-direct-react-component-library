@@ -3,22 +3,18 @@ import {render} from 'react-dom'
 import Container from '../components/utility/layout/Container'
 import Row from '../components/utility/layout/Row'
 import Column from '../components/utility/layout/Column'
-import Icon from '../components/atoms/icon/Icon'
-import carIcon from '../src/img/icons/car.svg'
-import Chat from '../components/atoms/chat/Chat'
+import List from '../components/atoms/list/List'
 
 const Playground = () => {
 
-    const divStyle = {
-        backgroundColor: '#00448c',
-        width: '100%',
-        padding: '1em',
-        color: 'white',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center'
-    }
+    const listItems = [
+        "Car policy",
+        "Home policy",
+        "Bike policy",
+        "Van policy",
+        "Multicar policy",
+        "YouDrive policy"
+    ]
 
     return (
         <>
@@ -27,12 +23,40 @@ const Playground = () => {
                     <Container>
                         <Row>
                             <Column xs={12}>
-                                <Chat>Chat</Chat>
+                                <List theme="primary-dark" listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="secondary-dark" listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="dark" listType="ol" isBold={true} listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="tick-primary-dark" listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="tick-secondary-dark" isBold={true} listItems={listItems} />
                             </Column>
                         </Row>
+                    </Container>
+                </div>
+                <div className="playground-container__item">
+                    <Container>
                         <Row>
                             <Column xs={12}>
-                                <Chat isSmall={true}>Chat</Chat>
+                                <List theme="primary" isBold={true} listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="secondary" listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List listType="ol" listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="tick-primary" isBold={true} listItems={listItems} />
+                                <br/>
+                                <br/>
+                                <List theme="tick-secondary" isBold={true} listItems={listItems} />
                             </Column>
                         </Row>
                     </Container>

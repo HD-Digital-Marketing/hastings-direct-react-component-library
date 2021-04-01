@@ -10,6 +10,7 @@ const Button = props => {
         url = '',
         className = '',
         theme = '',
+        value,
         children,
         onClick
     } = props
@@ -31,7 +32,7 @@ const Button = props => {
         <a href={url} className={buttonClass}>{children}</a>
 
     const renderButton = () =>
-        <button {...{ type, onClick }} className={buttonClass}>{children}</button>
+        <button {...{ type, value, onClick }} className={buttonClass}>{children}</button>
 
     return (
         isAnchor ? renderAnchor() : renderButton()

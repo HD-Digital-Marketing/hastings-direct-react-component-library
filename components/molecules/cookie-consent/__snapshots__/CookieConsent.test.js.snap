@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the cookie consent renders it should match the snapshot 1`] = `
+<div
+  className="m-cookie__wrap m-cookie__wrap--show"
+>
+  <div
+    className="m-cookie m-cookie--settings"
+  >
+    <form
+      className="m-cookie__container"
+    >
+      <span
+        className="a-link"
+        onClick={[Function]}
+      >
+        <span
+          className="a-icon m-cookie__icon"
+          style={
+            Object {
+              "backgroundColor": undefined,
+              "borderColor": undefined,
+              "borderWidth": 1.5,
+              "height": 15,
+              "width": 15,
+            }
+          }
+        />
+         Go back
+      </span>
+      <div
+        className="m-cookie__header"
+      >
+        <div>
+          <h2
+            className="a-header"
+          >
+            Privacy settings 
+            <span
+              className="a-icon m-cookie__icon m-cookie__icon--settings"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                  "borderColor": undefined,
+                  "borderWidth": 4.5,
+                  "height": 45,
+                  "width": 45,
+                }
+              }
+            />
+          </h2>
+        </div>
+      </div>
+      <div
+        className="m-cookie__body"
+      >
+        <p
+          style={
+            Object {
+              "marginBottom": "2em",
+            }
+          }
+        >
+          Let us know which settings you’re happy with applying to this device. We'll use a cookie to save your settings.
+        </p>
+        <h4
+          className="a-header"
+        >
+          Essential functions
+        </h4>
+        <p>
+          These cookies are necessary to enable the website to function and cannot be switched off. This includes cookies which we use to provide you with core services and features, to help keep our website secure and to help us detect fraud or crime.
+        </p>
+        <hr />
+        <h4
+          className="a-header"
+        >
+          Preferences and experience
+        </h4>
+        <p>
+          These cookies do things like remember your preferences and the choices you make, to personalise your experience of using the site.
+        </p>
+        <div
+          className="a-toggle a-toggle--small"
+        >
+          <label
+            className="a-toggle__label"
+            htmlFor="experience"
+          >
+            <span
+              className="a-toggle__slider-wrap"
+              style={
+                Object {
+                  "backgroundColor": "#afbdd1",
+                }
+              }
+            >
+              <input
+                defaultChecked={false}
+                id="experience"
+                name="experience"
+                type="checkbox"
+              />
+              <span
+                className="a-toggle__slider"
+              />
+            </span>
+            <span
+              className="a-toggle__value"
+              data-css-1b74rh9=""
+            >
+              Experience
+               disabled
+            </span>
+          </label>
+        </div>
+        <hr />
+        <h4
+          className="a-header"
+        >
+          Learning and analytics
+        </h4>
+        <p>
+          Information about how you use our website. We use this data to help make our websites and products better.
+        </p>
+        <div
+          className="a-toggle a-toggle--small"
+        >
+          <label
+            className="a-toggle__label"
+            htmlFor="analytics"
+          >
+            <span
+              className="a-toggle__slider-wrap"
+              style={
+                Object {
+                  "backgroundColor": "#afbdd1",
+                }
+              }
+            >
+              <input
+                defaultChecked={false}
+                id="analytics"
+                name="analytics"
+                type="checkbox"
+              />
+              <span
+                className="a-toggle__slider"
+              />
+            </span>
+            <span
+              className="a-toggle__value"
+              data-css-1b74rh9=""
+            >
+              Analytics
+               disabled
+            </span>
+          </label>
+        </div>
+        <hr />
+        <h4
+          className="a-header"
+        >
+          Communication & marketing
+        </h4>
+        <p>
+          These cookies run reporting tools that gather information from people on our website. These help us maintain relevant communication with you and show it appropriately
+        </p>
+        <div
+          className="a-toggle a-toggle--small"
+        >
+          <label
+            className="a-toggle__label"
+            htmlFor="comms"
+          >
+            <span
+              className="a-toggle__slider-wrap"
+              style={
+                Object {
+                  "backgroundColor": "#afbdd1",
+                }
+              }
+            >
+              <input
+                defaultChecked={false}
+                id="comms"
+                name="comms"
+                type="checkbox"
+              />
+              <span
+                className="a-toggle__slider"
+              />
+            </span>
+            <span
+              className="a-toggle__value"
+              data-css-1b74rh9=""
+            >
+              Comms & data
+               disabled
+            </span>
+          </label>
+        </div>
+        <hr />
+        <h4
+          className="a-header"
+        >
+          Disable / enable all
+        </h4>
+        <p>
+          Set preferences for all controls
+        </p>
+        <button
+          className="a-btn a-btn--tertiary"
+          type="button"
+        >
+          Disable all
+        </button>
+          
+        <button
+          className="a-btn a-btn--secondary"
+          type="button"
+        >
+          Enable all
+        </button>
+      </div>
+      <div
+        className="m-cookie__footer"
+      >
+        <hr />
+        <button
+          className="a-btn a-btn--block a-btn--primary"
+          type="submit"
+        >
+          Save and return
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

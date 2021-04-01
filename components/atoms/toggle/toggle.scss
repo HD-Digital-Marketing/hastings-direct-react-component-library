@@ -55,7 +55,6 @@
 	}
 
 	&__slider {
-		content: '';
 		position: absolute;
 		top: 50%;
 		left: 0;
@@ -74,7 +73,7 @@
 			background-color: $color-brand-blue-mid-light;
 			border: 2px solid transparent;
 			border-radius: 40px;
-			transition: border 0.2s;
+			transition: border 0.2s, background-color 0.3s;
 		}
 	}
 
@@ -99,5 +98,10 @@
 		span {
 			color: $color-white;
 		}
+	}
+
+	&--small {
+		transform-origin: left center;
+		transform: scale(0.8);
 	}
 }

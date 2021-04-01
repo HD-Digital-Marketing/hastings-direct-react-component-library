@@ -16,3 +16,15 @@ h3 {
 h4 {
 	@include type(1.2, 1rem, 0.875rem, 480px);
 }
+
+p {
+	line-height: 1.5;
+}
+
+hr {
+	border-color: #e1e1e1;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin: 2em 0;
+}

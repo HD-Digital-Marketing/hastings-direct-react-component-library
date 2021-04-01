@@ -16,12 +16,12 @@ exports[`Check the toggle renders it should match the snapshot 1`] = `
     </span>
     <span
       className="a-toggle__slider-wrap"
+      style={null}
     >
       <input
         defaultChecked={false}
         id="group"
         name="group"
-        onChange={[Function]}
         type="checkbox"
       />
       <span
